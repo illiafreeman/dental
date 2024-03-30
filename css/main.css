@@ -158,17 +158,6 @@ body {
   overflow: hidden;
 }
 
-.svg path, .svg_min path, .license-svg path {
-  stroke-dasharray: 6;
-  stroke-dashoffset: 1200;
-  animation: dash 60s linear forwards infinite;
-}
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
 .main {
   padding-top: 120px;
 }

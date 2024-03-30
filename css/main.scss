@@ -154,29 +154,7 @@ body {
 .oh{
     overflow: hidden;
 }
-.svg, .svg_min, .license-svg {
 
-    // width: 50vw;
-    // height: 900px;
-    path {
-        stroke-dasharray: 6;
-        stroke-dashoffset: 1200;
-        -webkit-animation: dash 60s linear forwards infinite;
-        animation: dash 60s linear forwards infinite;
-    }
-
-    @-webkit-keyframes dash {
-        to {
-            stroke-dashoffset: 0
-        }
-    }
-
-    @keyframes dash {
-        to {
-            stroke-dashoffset: 0
-        }
-    }
-}
 
 .main {
     padding-top: 120px;

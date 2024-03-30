@@ -1,27 +1,32 @@
+
+
+
 /*certificate carousel*/
-if($('.review-gal').length){
-    const reviewGal = new Swiper('.review-gal', {
-        slidesPerView: 1.5,
-        spaceBetween: 20,
-        freeMode: true,
-        loop: true,
-        navigation: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+const reviewGal = new Swiper('.stat-gal', {
+    slidesPerView: 1.5,
+    spaceBetween: 20,
+    freeMode: true,
+    loop: true,
+    navigation: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 2.5,
+            spaceBetween: 30,
         },
-        breakpoints: {
-            480: {
-                slidesPerView: 2.5,
-                spaceBetween: 30,
-            },
-            768: {
-                slidesPerView: 4,
-                spaceBetween: 30,
-            },
-        }
-    });
-}
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+    }
+});
 /*end certificate carousel*/
 
 /*certificate increase size*/
