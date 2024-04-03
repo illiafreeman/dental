@@ -7,7 +7,7 @@ if($('.stat-gal').length){
         slidesPerView: 1.5,
         spaceBetween: 20,
         freeMode: true,
-        //loop: true,
+        loop: true,
         navigation: true,
         navigation: {
             nextEl: '.swiper-button-next',
