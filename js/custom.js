@@ -7,14 +7,14 @@ if($('.stat-gal').length){
         slidesPerView: 1.5,
         spaceBetween: 20,
         freeMode: true,
-        loop: true,
+        //loop: true,
         navigation: true,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '#stat-next',
+            prevEl: '#stat-prev',
         },
         pagination: {
-            el: ".swiper-pagination",
+            el: "#stat-pagination",
             clickable: true,
         },
         breakpoints: {
@@ -30,20 +30,20 @@ if($('.stat-gal').length){
     });
 }
 if($('.star-gal').length){
-    const review = new Swiper('.star-gal', {
+    var review = new Swiper('.star-gal', {
         slidesPerView: 1.5,
         spaceBetween: 20,
         freeMode: true,
         //loop: true,
         navigation: true,
-        navigation: {
+        /* navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
-        },
-        pagination: {
+        }, */
+        /* pagination: {
             el: ".swiper-pagination",
             clickable: true,
-        },
+        }, */
         breakpoints: {
             480: {
                 slidesPerView: 2.5,
