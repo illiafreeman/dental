@@ -63,6 +63,7 @@ h6 {
     text-transform: uppercase;
     font-family: var(--third-family);
     line-height: 110%;
+    margin-top: 0;
 }
 h1{
     font-size: 56px;
@@ -360,7 +361,7 @@ body {
     }
 }
 .intro {
-    padding-top: 0;
+    padding: 0 0 40px;
     &__desc {}
     &__subdesc {
         margin-bottom: 66px;
@@ -385,20 +386,34 @@ body {
 .title {
     &_h1 {}
     &_h2 {}
-    &_center {}
+    &_center {
+        text-align: center;
+    }
     &_h3 {}
     &_why {}
 }
+.gal-inner{
+    //position: relative;
+}
 .stat {
+    padding-top: 0;
 }
 .stat-galwrap {
+    position: relative;
+    padding: 0 80px;
+    .swiper {
+        //position: static;
+    }
 }
 .stat-gal {
     &__am {}
     &__desc {}
+    .swiper-wrapper{
+        //align-items: center;
+        //padding-bottom: 60px;
+    }
 }
-.swiper {
-}
+
 .swiper-wrapper {
 }
 .swiper-slide {

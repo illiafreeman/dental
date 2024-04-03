@@ -3,11 +3,11 @@
 
 /*certificate carousel*/
 if($('.stat-gal').length){
-    const reviewGal = new Swiper('.stat-gal', {
+    var reviewGal = new Swiper('.stat-gal', {
         slidesPerView: 1.5,
         spaceBetween: 20,
         freeMode: true,
-        loop: true,
+        //loop: true,
         navigation: true,
         navigation: {
             nextEl: '.swiper-button-next',
@@ -30,7 +30,7 @@ if($('.stat-gal').length){
     });
 }
 if($('.star-gal').length){
-    const reviewGal = new Swiper('.star-gal', {
+    const review = new Swiper('.star-gal', {
         slidesPerView: 1.5,
         spaceBetween: 20,
         freeMode: true,

@@ -58,6 +58,7 @@ h6 {
   text-transform: uppercase;
   font-family: var(--third-family);
   line-height: 110%;
+  margin-top: 0;
 }
 
 h1 {
@@ -364,7 +365,7 @@ body {
 }
 
 .intro {
-  padding-top: 0;
+  padding: 0 0 40px;
 }
 .intro__subdesc {
   margin-bottom: 66px;
@@ -386,6 +387,17 @@ body {
   align-items: center;
 }
 
+.title_center {
+  text-align: center;
+}
+.stat {
+  padding-top: 0;
+}
+
+.stat-galwrap {
+  position: relative;
+  padding: 0 80px;
+}
 @media only screen and (max-width: 1700px) {
   .contaner {
     width: 100%;
