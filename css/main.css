@@ -344,6 +344,7 @@ body {
 }
 .btn:hover span {
   color: #000;
+  transform: scale(1.05);
 }
 .btn:hover:after {
   transform: translateY(0);
@@ -364,6 +365,18 @@ body {
 
 .intro {
   padding-top: 0;
+}
+.intro__subdesc {
+  margin-bottom: 66px;
+}
+.intro__subdesc span {
+  display: block;
+  font-family: var(--second-family);
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.intro__subdesc span:last-child {
+  margin-bottom: 0;
 }
 .intro__pic {
   width: 460px;

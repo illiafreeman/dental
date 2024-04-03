@@ -337,6 +337,7 @@ body {
         box-shadow: 0 0 14px 2px var(--green);
         span{
             color: #000;
+            transform: scale(1.05);
         }
         &:after{
             transform: translateY(0);
@@ -361,7 +362,18 @@ body {
 .intro {
     padding-top: 0;
     &__desc {}
-    &__subdesc {}
+    &__subdesc {
+        margin-bottom: 66px;
+        span{
+            display: block;
+            font-family: var(--second-family);
+            margin-bottom: 10px;
+            font-size: 22px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
     &__pic {
         width: 460px;
     }
