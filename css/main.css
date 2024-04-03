@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Evolventa";
-  src: url("../font/Evolventa-Regular.ttf") format("truetype");
+  src: url("../font/EvolventaRegular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -54,24 +54,29 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 50px;
-  font-weight: 500;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: var(--third-family);
+  line-height: 110%;
 }
 
 h1 {
-  font-size: 60px;
-  line-height: 110%;
+  font-size: 56px;
+  margin: 0 0 40px;
+}
+h1 span {
+  display: block;
+  font-weight: 400;
 }
 
 h2 {
-  font-size: 48px;
-  line-height: 110%;
+  font-size: 42px;
+  margin-bottom: 60px;
 }
 
 h3 {
   font-size: 24px;
   line-height: 120%;
-  letter-spacing: 0.03em;
   margin-bottom: 20px;
 }
 
@@ -171,15 +176,12 @@ body {
   overflow-x: hidden;
   color: var(--black);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
   padding: 0;
   margin: 0;
-  flex-direction: column;
-  background: #F2F6FF;
-  font-family: var(--third-family);
-  text-transform: uppercase;
-  font-variant-numeric: lining-nums proportional-nums;
+  background: var(--white);
+  font-family: var(--font-family);
 }
 
 .oh {
@@ -202,6 +204,93 @@ body {
   width: 1660px;
   margin: 0 auto;
   padding: 0;
+}
+
+.header {
+  padding: 25px 0;
+  background: var(--black);
+  color: var(--white);
+  height: 105px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  height: 100%;
+  display: block;
+}
+.header__logo img {
+  height: 100%;
+}
+.header__group {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.header__contact {
+  font-style: normal;
+}
+.header__tel {
+  color: var(--white);
+}
+.header__menu-btn {
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+}
+.header .hamburger {
+  width: 46px;
+  height: 30px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.header .hamburger span:first-child {
+  top: 0;
+  transform-origin: left center;
+}
+.header .hamburger span:nth-child(2) {
+  top: 13px;
+  transform-origin: left center;
+}
+.header .hamburger span:nth-child(3) {
+  top: 26px;
+  transform-origin: left center;
+}
+.header .hamburger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: var(--white);
+  border-radius: 4px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+.header .hamburger.open span:first-child {
+  transform: rotate(45deg);
+  top: -3px;
+  left: 6px;
+}
+.header .hamburger.open span:nth-child(2) {
+  width: 0;
+  opacity: 0;
+}
+.header .hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 29px;
+  left: 6px;
 }
 
 .btn {
