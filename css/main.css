@@ -543,12 +543,135 @@ body {
   overflow: hidden;
   border-radius: 20px;
 }
+.adv__pic {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 .adv__desc {
   width: calc(50% - 30px);
 }
 .adv__desc p {
   font-family: var(--second-family);
   margin-bottom: 40px;
+}
+
+.fear .title_h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fear__wrap {
+  display: flex;
+  gap: 8px;
+}
+.fear__desc {
+  width: 760px;
+  min-width: 760px;
+  display: grid;
+  grid-template: auto auto auto/1fr 1fr;
+  gap: 8px;
+}
+.fear__desc div {
+  border-radius: 20px;
+  color: var(--black);
+  padding: 26px 22px;
+}
+.fear__pain {
+  grid-row: 1/2;
+  grid-column: 1/3;
+  background: var(--gray);
+}
+.fear__serv {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  background: var(--white);
+}
+.fear__text {
+  font-family: var(--second-family);
+}
+.fear__price {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background: var(--white);
+}
+.fear__cen {
+  grid-row: 3/4;
+  grid-column: 1/3;
+  background: var(--green);
+}
+.fear__picwrap {
+  overflow: hidden;
+  border-radius: 20px;
+}
+.fear__pic {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.about__wrap {
+  display: grid;
+  grid-template: auto 1fr/1fr 1fr;
+  grid-column-gap: 63px;
+  grid-row-gap: 40px;
+}
+.about__picblock {
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+.about__picblock span {
+  font-family: var(--second-family);
+  font-size: 14px;
+}
+.about__picwrap {
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.about__pic {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.about__desc {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.about__desc p {
+  font-family: var(--second-family);
+  font-size: 18px;
+}
+.about__video {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.about__video p {
+  font-family: var(--second-family);
+  font-weight: 300;
+  font-size: 16px;
+}
+.about__videowrap {
+  width: 260px;
+}
+.about__videoinner {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 56.25%;
+}
+.about__videoinner iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 1700px) {
