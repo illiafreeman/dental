@@ -121,6 +121,56 @@ if($('#promo-gal').length){
         }
     });
 }
+if($('#videoreview').length){
+    var review = new Swiper('#videoreview', {
+        slidesPerView: 1.5,
+        spaceBetween: 20,
+        freeMode: true,
+        navigation: {
+            nextEl: '#videoreview-next',
+            prevEl: '#videoreview-prev',
+        },
+        pagination: {
+            el: "#videoreview-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            480: {
+                slidesPerView: 2.5,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+        }
+    });
+}
+if($('#textreview').length){
+    var review = new Swiper('#textreview', {
+        slidesPerView: 1.5,
+        spaceBetween: 20,
+        freeMode: true,
+        navigation: {
+            nextEl: '#textreview-next',
+            prevEl: '#textreview-prev',
+        },
+        pagination: {
+            el: "#textreview-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            480: {
+                slidesPerView: 2.5,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+        }
+    });
+}
 /*end certificate carousel*/
 
 /*certificate increase size*/
