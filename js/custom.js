@@ -96,6 +96,31 @@ if($('#smi-gal').length){
         }
     });
 }
+if($('#promo-gal').length){
+    var review = new Swiper('#promo-gal', {
+        slidesPerView: 1.5,
+        spaceBetween: 20,
+        freeMode: true,
+        navigation: {
+            nextEl: '#promo-next',
+            prevEl: '#promo-prev',
+        },
+        pagination: {
+            el: "#promo-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            480: {
+                slidesPerView: 2.5,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+        }
+    });
+}
 /*end certificate carousel*/
 
 /*certificate increase size*/

@@ -844,12 +844,49 @@ body {
     }
 }
 .promo {
-    &__pic {}
-    &__title {}
-}
-.promo-galwrap {
+    &__pic {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: var(--transition);
+    }
+    &__title {
+        position: absolute;
+        bottom: 26px;
+        left: 20px;
+        right: 20px;
+        font-family: var(--third-family);
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        transition: var(--transition);
+    }
+    .title{
+        span{
+            display: block;
+            font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 16px;
+            text-transform: none;
+            margin-top: 30px;
+        }
+    }
 }
 .promo-gal {
+    .swiper-slide{
+        overflow: hidden;
+        border-radius: 20px;
+        position: relative;
+        cursor: pointer;
+        &:hover{
+            .promo__pic{
+                transform: scale(1.1);
+            }
+            .promo__title{
+                color: var(--green)
+            }
+        }
+    }
 }
 .review {
     &__more {}
