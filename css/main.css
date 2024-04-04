@@ -498,7 +498,40 @@ body {
 
 .interier {
   padding-top: 66px;
+  display: flex;
+  align-items: center;
 }
+.interier__title {
+  font-family: var(--third-family);
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.interier__title strong {
+  font-weight: 600;
+}
+.interier__videowrap {
+  width: 570px;
+  flex: 1 0 auto;
+}
+.interier__videoinner {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 56.25%;
+}
+.interier__videoinner iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media only screen and (max-width: 1700px) {
   .contaner {
     width: 100%;

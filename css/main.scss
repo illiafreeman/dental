@@ -519,8 +519,38 @@ body {
 }
 .interier {
     padding-top: 66px;
-    &__title {}
-    &__videowrap {}
+    display: flex;
+    align-items: center;
+    &__title {
+        font-family: var(--third-family);
+        font-weight: 400;
+        font-size: 32px;
+        text-transform: uppercase;
+        margin: 0;
+        strong{
+            font-weight: 600;
+        }
+    }
+    &__videowrap{
+        width: 570px;
+        flex: 1 0 auto;
+    }
+    &__videoinner {
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        padding-top: 56.25%;
+        iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 .adv {
     &__wrap {}
