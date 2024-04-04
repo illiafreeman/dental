@@ -48,6 +48,31 @@ if($('#star-gal').length){
         }
     });
 }
+if($('#eq-gal').length){
+    var review = new Swiper('#eq-gal', {
+        slidesPerView: 1.5,
+        spaceBetween: 20,
+        freeMode: true,
+        navigation: {
+            nextEl: '#eq-next',
+            prevEl: '#eq-prev',
+        },
+        pagination: {
+            el: "#eq-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            480: {
+                slidesPerView: 2.5,
+                spaceBetween: 30,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 60,
+            },
+        }
+    });
+}
 /*end certificate carousel*/
 
 /*certificate increase size*/

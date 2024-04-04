@@ -674,6 +674,16 @@ body {
   height: 100%;
 }
 
+.eq-gal .swiper-slide {
+  background: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  height: auto;
+  color: var(--black);
+}
+.eq-gal .swiper-wrapper {
+  align-items: stretch;
+}
 @media only screen and (max-width: 1700px) {
   .contaner {
     width: 100%;

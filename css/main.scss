@@ -698,6 +698,16 @@ body {
 .eq-galwrap {
 }
 .eq-gal {
+    .swiper-slide{
+        background: var(--white);
+        border-radius: 20px;
+        overflow: hidden;
+        height: auto;
+        color: var(--black);
+    }
+    .swiper-wrapper{
+        align-items: stretch;
+    }
     &__desc {}
     &__pic {}
 }
