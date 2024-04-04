@@ -8,7 +8,6 @@ if($('.stat-gal').length){
         spaceBetween: 20,
         freeMode: true,
         //loop: true,
-        navigation: true,
         navigation: {
             nextEl: '#stat-next',
             prevEl: '#stat-prev',
@@ -23,7 +22,7 @@ if($('.stat-gal').length){
                 spaceBetween: 30,
             },
             768: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 30,
             },
         }

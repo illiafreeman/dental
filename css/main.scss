@@ -358,6 +358,22 @@ body {
     &_black {
         background: var(--black);
         color: var(--white);
+        .swiper-button-next, .swiper-button-prev{
+            &:after{
+                color: var(--white);
+            }
+            &.swiper-button-disabled{
+                &:hover{
+                    cursor: not-allowed;
+                }
+                &:after{
+                    color: var(--gray);
+                    &:hover{
+                        cursor: not-allowed;
+                    }
+                }
+            }
+        }
     }
 }
 .intro {
@@ -406,8 +422,25 @@ body {
     }
 }
 .stat-gal {
-    &__am {}
-    &__desc {}
+    &__am {
+        color: var(--green);
+        font-family: var(--third-family);
+        font-weight: 700;
+        font-size: 34px;
+        color: var(--green);
+        margin-bottom: 10px;
+        span{
+            font-size: 17px;
+        }
+    }
+    &__desc {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 18px;
+        &_min{
+            font-size: 16px;
+        }
+    }
     .swiper-wrapper{
         //align-items: center;
         //padding-bottom: 60px;
@@ -419,12 +452,32 @@ body {
 .swiper-slide {
 }
 .swiper-pagination {
+    position: static;
+    margin-top: 64px;
+    .swiper-pagination-bullet{
+        width: 12px;
+        height: 12px;
+        background: var(--gray);
+        margin: 0 12px !important;
+        opacity: 1;
+        &-active{
+            background: var(--green);
+        }
+    }
 }
 .swiper-button {
 }
 .swiper-button-prev {
 }
 .swiper-button-next {
+}
+.swiper-button-next, .swiper-button-prev{
+    &:after{
+        color: var(--black);
+        font-weight: 600;
+        font-size: 38px;
+    }
+    
 }
 .star {
 }
