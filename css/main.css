@@ -882,6 +882,14 @@ body {
   background: var(--white);
   height: auto;
   padding: 34px 22px;
+  font-family: var(--second-family);
+}
+.review-text .swiper-slide a {
+  text-decoration: underline;
+  color: #76a424;
+}
+.review-text .swiper-slide a:hover {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1700px) {

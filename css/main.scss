@@ -925,6 +925,14 @@ body {
         background: var(--white);
         height: auto;
         padding: 34px 22px;
+        font-family: var(--second-family);
+        a{
+            text-decoration: underline;
+            color: #76a424;
+            &:hover{
+                text-decoration: none;
+            }
+        }
     }
 }
 .contact {
