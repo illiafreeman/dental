@@ -854,6 +854,28 @@ body {
 .review {
   background: #f6f6f6;
 }
+.review__more {
+  text-align: center;
+  margin-bottom: 46px;
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 20px;
+}
+.review__servlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 34px;
+  background: var(--white);
+  border-radius: 20px;
+}
+.review__servlist li a {
+  display: block;
+  transition: var(--transition);
+}
+.review__servlist li a:hover {
+  transform: scale(1.05);
+}
 .videoreview-wrap {
   margin-bottom: 78px;
 }
@@ -873,6 +895,10 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+.textreview-wrap .swiper-pagination {
+  margin: 64px 0;
 }
 
 .review-text .swiper-wrapper {
