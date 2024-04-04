@@ -73,28 +73,40 @@ if($('#eq-gal').length){
         }
     });
 }
+if($('#smi-gal').length){
+    var review = new Swiper('#smi-gal', {
+        slidesPerView: 1,
+        freeMode: true,
+        navigation: {
+            nextEl: '#smi-next',
+            prevEl: '#smi-prev',
+        },
+        pagination: {
+            el: "#smi-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            480: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 1,
+            },
+        }
+    });
+}
 /*end certificate carousel*/
 
 /*certificate increase size*/
-if($('[data-fancybox]').length){
-    Fancybox.bind('[data-fancybox]', {
-        compact: false,
-        idle: false,
-        animated: false,
-        showClass: false,
-        hideClass: false,
-        dragToClose: false,
-        contentClick: false,
-        Images: {
-            zoom: false,
+if($('#star-gal a[data-fancybox]').length){
+    Fancybox.bind('#star-gal [data-fancybox]', {
+        Thumbs: {
+            type: 'classic',
         },
-        Toolbar: {
-            display: {
-                left: [],
-                middle: ['infobar'],
-                right: ['close'],
-            },
-        },
+    });
+}
+if($('#smi-gal a[data-fancybox]').length){
+    Fancybox.bind('#smi-gal [data-fancybox]', {
         Thumbs: {
             type: 'classic',
         },
