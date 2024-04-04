@@ -698,18 +698,36 @@ body {
 .eq-galwrap {
 }
 .eq-gal {
+    
     .swiper-slide{
         background: var(--white);
         border-radius: 20px;
         overflow: hidden;
         height: auto;
         color: var(--black);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .swiper-wrapper{
         align-items: stretch;
     }
-    &__desc {}
-    &__pic {}
+    &__desc {
+        h3{
+            height: 66px;
+            padding: 36px 22px 0;
+            margin-bottom: 24px;
+        }
+        span{
+            padding: 0 22px 22px;
+            display: flex;
+            font-family: var(--second-family);
+        }
+    }
+    &__pic {
+        width: 75%;
+        align-self: flex-end;
+    }
 }
 .why {
     &__list {}

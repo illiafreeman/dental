@@ -680,10 +680,28 @@ body {
   overflow: hidden;
   height: auto;
   color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .eq-gal .swiper-wrapper {
   align-items: stretch;
 }
+.eq-gal__desc h3 {
+  height: 66px;
+  padding: 36px 22px 0;
+  margin-bottom: 24px;
+}
+.eq-gal__desc span {
+  padding: 0 22px 22px;
+  display: flex;
+  font-family: var(--second-family);
+}
+.eq-gal__pic {
+  width: 75%;
+  align-self: flex-end;
+}
+
 @media only screen and (max-width: 1700px) {
   .contaner {
     width: 100%;

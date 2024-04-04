@@ -64,11 +64,11 @@ if($('#eq-gal').length){
         breakpoints: {
             480: {
                 slidesPerView: 2.5,
-                spaceBetween: 30,
+                spaceBetween: 20,
             },
             768: {
                 slidesPerView: 3,
-                spaceBetween: 60,
+                spaceBetween: 20,
             },
         }
     });
