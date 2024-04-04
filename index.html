@@ -67,8 +67,8 @@
         <article class="article stat article_black">
             <div class="container">
                 <h2 class="title title_h2 title_center">О клинике в цифрах</h2>
-                <div class="stat-galwrap">
-                    <div class="stat-gal swiper">
+                <div class="galwrap">
+                    <div id="stat-gal" class="stat-gal swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <p class="stat-gal__am">
@@ -131,7 +131,6 @@
                                 <p class="stat-gal__desc stat-gal__desc_min">восстановление зубного ряда (протезы)</p>
                             </div>
                         </div>
-                        
                     </div>
                     <div id="stat-prev" class="swiper-button swiper-button-prev"></div>
                     <div id="stat-next" class="swiper-button swiper-button-next"></div>
@@ -139,47 +138,58 @@
                 <div id="stat-pagination" class="swiper-pagination"></div>
             </div>
         </article>
-        
         <article class="article star">
             <div class="container">
                 <h2 class="title title_h2 title_center">Нас выбирают звезды и эксперты!</h2>
-                <div class="star-galwrap">
-                    <div class="star-gal swiper">
+                <div class="galwrap">
+                    <div id="star-gal" class="star-gal swiper">
                         <div class="swiper-wrapper">
-                            <a href="./img/star_1.jpg" class="swiper-slide" data-fancybox="star-gal"
-                                data-caption="Ирина Безрукова">
-                                <img src="./img/star_1.jpg" alt="" class="star-gal__pic">
-                                <p class="star-gal__name">Ирина Безрукова</p>
-                            </a>
-                            <a href="./img/star_2.jpg" class="swiper-slide" data-fancybox="star-gal"
-                                data-caption="Тута Ларсен">
-                                <img src="./img/star_2.jpg" alt="" class="star-gal__pic">
-                                <p class="star-gal__name">Тута Ларсен</p>
-                            </a>
-                            <a href="./img/star_3.jpg" class="swiper-slide" data-fancybox="star-gal"
-                                data-caption="Тимур Соловьев">
-                                <img src="./img/star_3.jpg" alt="" class="star-gal__pic">
-                                <p class="star-gal__name">Тимур Соловьев</p>
-                            </a>
-                            <a href="./img/star_4.jpg" class="swiper-slide" data-fancybox="star-gal"
-                                data-caption="Алексей Гаврилов">
-                                <img src="./img/star_4.jpg" alt="" class="star-gal__pic">
-                                <p class="star-gal__name">Алексей Гаврилов</p>
-                            </a>
-                            <a href="./img/star_5.jpg" class="swiper-slide" data-fancybox="star-gal"
-                                data-caption="Никита Дацков">
-                                <img src="./img/star_5.jpg" alt="" class="star-gal__pic">
-                                <p class="star-gal__name">Никита Дацков</p>
-                            </a>
-                            <a href="./img/star_6.jpg" class="swiper-slide" data-fancybox="star-gal"
-                                data-caption="Валерий Колосков">
-                                <img src="./img/star_6.jpg" alt="" class="star-gal__pic">
-                                <p class="star-gal__name">Валерий Колосков</p>
-                            </a>
+                            <div class="swiper-slide">
+                                <a href="./img/star_1.jpg" class="swiper-slide__inner" data-fancybox="star-gal"
+                                    data-caption="Ирина Безрукова">
+                                    <img src="./img/star_1.jpg" alt="" class="star-gal__pic">
+                                    <p class="star-gal__name">Ирина Безрукова</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./img/star_2.jpg" class="swiper-slide__inner" data-fancybox="star-gal"
+                                    data-caption="Тута Ларсен">
+                                    <img src="./img/star_2.jpg" alt="" class="star-gal__pic">
+                                    <p class="star-gal__name">Тута Ларсен</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./img/star_3.jpg" class="swiper-slide__inner" data-fancybox="star-gal"
+                                    data-caption="Тимур Соловьев">
+                                    <img src="./img/star_3.jpg" alt="" class="star-gal__pic">
+                                    <p class="star-gal__name">Тимур Соловьев</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./img/star_4.jpg" class="swiper-slide__inner" data-fancybox="star-gal"
+                                    data-caption="Алексей Гаврилов">
+                                    <img src="./img/star_4.jpg" alt="" class="star-gal__pic">
+                                    <p class="star-gal__name">Алексей Гаврилов</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./img/star_5.jpg" class="swiper-slide__inner" data-fancybox="star-gal"
+                                    data-caption="Никита Дацков">
+                                    <img src="./img/star_5.jpg" alt="" class="star-gal__pic">
+                                    <p class="star-gal__name">Никита Дацков</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./img/star_6.jpg" class="swiper-slide__inner" data-fancybox="star-gal"
+                                    data-caption="Валерий Колосков">
+                                    <img src="./img/star_6.jpg" alt="" class="star-gal__pic">
+                                    <p class="star-gal__name">Валерий Колосков</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-button swiper-button-prev"></div>
-                    <div class="swiper-button swiper-button-next"></div>
+                    <div id="star-prev" class="swiper-button swiper-button-prev"></div>
+                    <div id="star-next" class="swiper-button swiper-button-next"></div>
                 </div>
                 <div class="interier">
                     <h3 class="title title_h3 interier__title">Посмотрите интерьер нашей клиники вместе с Ириной
@@ -193,7 +203,6 @@
                 </div>
             </div>
         </article>
-        
         <article class="article adv">
             <div class="container">
                 <div class="adv__wrap">

@@ -2,12 +2,11 @@
 
 
 /*certificate carousel*/
-if($('.stat-gal').length){
-    var reviewGal = new Swiper('.stat-gal', {
+if($('#stat-gal').length){
+    var reviewGal = new Swiper('#stat-gal', {
         slidesPerView: 1.5,
         spaceBetween: 20,
         freeMode: true,
-        //loop: true,
         navigation: {
             nextEl: '#stat-next',
             prevEl: '#stat-prev',
@@ -28,29 +27,23 @@ if($('.stat-gal').length){
         }
     });
 }
-if($('.star-gal').length){
-    var review = new Swiper('.star-gal', {
+if($('#star-gal').length){
+    var review = new Swiper('#star-gal', {
         slidesPerView: 1.5,
         spaceBetween: 20,
         freeMode: true,
-        //loop: true,
-        navigation: true,
-        /* navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        }, */
-        /* pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        }, */
+        navigation: {
+            nextEl: '#star-next',
+            prevEl: '#star-prev',
+        },
         breakpoints: {
             480: {
                 slidesPerView: 2.5,
                 spaceBetween: 30,
             },
             768: {
-                slidesPerView: 4,
-                spaceBetween: 30,
+                slidesPerView: 3,
+                spaceBetween: 60,
             },
         }
     });

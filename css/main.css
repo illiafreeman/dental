@@ -406,10 +406,11 @@ body {
   padding-top: 0;
 }
 
-.stat-galwrap {
+.galwrap {
   position: relative;
   padding: 0 80px;
 }
+
 .stat-gal__am {
   color: var(--green);
   font-family: var(--third-family);
@@ -444,12 +445,60 @@ body {
   background: var(--green);
 }
 
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
 .swiper-button-next:after, .swiper-button-prev:after {
   color: var(--black);
   font-weight: 600;
   font-size: 38px;
 }
 
+.star .galwrap {
+  padding: 0 50px;
+}
+
+.star-gal .swiper-slide {
+  padding: 20px;
+}
+.star-gal .swiper-slide__inner {
+  border-radius: 20px;
+  box-shadow: 0 0 12px 0 rgba(58, 58, 58, 0.12);
+  transition: var(--transition);
+  display: block;
+}
+.star-gal .swiper-slide__inner:hover {
+  box-shadow: 0 0 12px 4px rgba(58, 58, 58, 0.2);
+}
+.star-gal__pic {
+  border-radius: 20px;
+}
+.star-gal__name {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--black);
+  height: 80px;
+  text-align: center;
+}
+
+.fancybox__caption {
+  color: var(--gray);
+}
+
+.interier {
+  padding-top: 66px;
+}
 @media only screen and (max-width: 1700px) {
   .contaner {
     width: 100%;
