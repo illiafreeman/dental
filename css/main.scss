@@ -787,10 +787,32 @@ body {
 .smi-galwrap {
 }
 .smi-gal {
-    &__descwrap {}
-    &__desc {}
-    &__date {}
-    &__picwrap {}
+    .swiper-wrapper{
+        align-items: flex-start;
+    }
+    .swiper-slide{
+        display: flex;
+        gap: 60px;
+        align-items: flex-end;
+    }
+    &__descwrap {
+        font-family: var(--second-family);
+    }
+    &__desc {
+        font-size: 20px;
+        margin-bottom: 30px;
+        strong{
+            color: var(--green);
+            font-weight: 700;
+        }
+    }
+    &__date {
+        margin: 0;
+    }
+    &__picwrap {
+        width: 60%;
+        max-width: 60%;
+    }
     &__pic {}
 }
 .team {

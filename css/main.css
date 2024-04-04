@@ -757,6 +757,32 @@ body {
   height: 100%;
 }
 
+.smi-gal .swiper-wrapper {
+  align-items: flex-start;
+}
+.smi-gal .swiper-slide {
+  display: flex;
+  gap: 60px;
+  align-items: flex-end;
+}
+.smi-gal__descwrap {
+  font-family: var(--second-family);
+}
+.smi-gal__desc {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.smi-gal__desc strong {
+  color: var(--green);
+  font-weight: 700;
+}
+.smi-gal__date {
+  margin: 0;
+}
+.smi-gal__picwrap {
+  width: 60%;
+  max-width: 60%;
+}
 @media only screen and (max-width: 1700px) {
   .contaner {
     width: 100%;

@@ -77,6 +77,7 @@ if($('#smi-gal').length){
     var review = new Swiper('#smi-gal', {
         slidesPerView: 1,
         freeMode: true,
+        autoHeight: true,
         navigation: {
             nextEl: '#smi-next',
             prevEl: '#smi-prev',
