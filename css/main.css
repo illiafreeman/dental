@@ -851,6 +851,9 @@ body {
   color: var(--green);
 }
 
+.review {
+  background: #f6f6f6;
+}
 @media only screen and (max-width: 1700px) {
   .contaner {
     width: 100%;
