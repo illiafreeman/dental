@@ -894,12 +894,38 @@ body {
     &__servlist {}
 }
 .videoreview-wrap {
+    margin-bottom: 78px;
 }
 .videoreview {
+    &__wrap{
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        padding-top: 56.25%;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 .textreview-wrap {
 }
 .review-text {
+    .swiper-wrapper{
+        align-items: stretch;
+        
+    }
+    .swiper-slide{
+        background: var(--white);
+        height: auto;
+        padding: 34px 22px;
+    }
 }
 .contact {
     &__wrap {}
