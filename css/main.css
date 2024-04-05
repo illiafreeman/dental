@@ -391,11 +391,13 @@ body {
   margin-bottom: 0;
 }
 .intro__pic {
-  width: 370px;
+  width: auto;
+  height: 580px;
 }
 .intro .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .title_center {

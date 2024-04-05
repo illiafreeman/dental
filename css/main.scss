@@ -391,11 +391,13 @@ body {
         }
     }
     &__pic {
-        width: 370px;
+        width: auto;
+        height: 580px;
     }
     .container{
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 }
 .title {
