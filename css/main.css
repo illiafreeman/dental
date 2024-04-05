@@ -1098,6 +1098,20 @@ body {
   display: grid;
   grid-template: 1fr/repeat(3, 1fr);
   height: 100%;
+  position: relative;
+}
+.menu__close {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  background: url(../img/close.svg) no-repeat center center/contain;
+  top: 34px;
+  right: 3px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.menu__close:hover {
+  transform: rotate(180deg);
 }
 .menu__main {
   position: relative;
@@ -1157,10 +1171,24 @@ body {
   font-weight: 600;
   font-size: 22px;
   text-transform: uppercase;
-}
-.nav > li > span {
   display: inline-block;
   position: relative;
+}
+.nav > li > a:before, .nav > li span:before {
+  content: "";
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  right: 0;
+  background: #acacac;
+  transition: var(--transition);
+}
+.nav > li > a:hover::before, .nav > li span:hover::before {
+  left: 0;
+  width: 100%;
+}
+.nav > li > span {
   cursor: pointer;
 }
 .nav > li > span:after {
@@ -1174,6 +1202,10 @@ body {
   right: -23px;
   transition: var(--transition);
 }
+.nav > li > span:hover:after {
+  right: -28px;
+}
+
 @media only screen and (max-width: 1280px) {
   h1, h2, h3 {
     margin-bottom: 20px;
