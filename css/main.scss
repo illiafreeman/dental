@@ -1190,11 +1190,41 @@ body {
 }
 .nav {
     margin-bottom: 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
     li{
         ul{
             opacity: 0;
             visibility: hidden;
             position: absolute;
+        }
+    }
+    &>li{
+        &>a, span{
+            font-family: var(--second-family);
+            font-weight: 600;
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+        &>span{
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            &:after{
+                content: '';
+                display: block;
+                position: absolute;
+                width: 10px;
+                height: 18px;
+                background: url(../img/chevron_white.svg) no-repeat center center / contain;
+                top: 8px;
+                right: -23px;
+                transition: var(--transition)
+            }
+            &:hover{
+                
+            }
         }
     }
 }
