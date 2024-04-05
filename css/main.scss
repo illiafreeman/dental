@@ -1128,6 +1128,78 @@ body {
         }
     }
 }
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    background: var(--white);
+    z-index: 100;
+    overflow: auto;
+    &__container {
+        width: 1180px;
+        margin: 0 auto;
+        display: grid;
+        grid-template: 1fr/repeat(3, 1fr);
+        height: 100%;
+    }
+    &__main {
+        position: relative;
+        color: var(--white);
+        padding: 24px 66px 24px 0;
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 10000px;
+            height: 100%;
+            background: var(--black);
+            top: 0px;
+            right: 0px;
+            z-index: -1;
+        }
+        a{
+            color: var(--white);
+        }
+    }
+    &__logo {
+        margin-bottom: 58px;
+        display: inline-block;
+    }
+    &__soc {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 26px;
+    }
+    &__soclink {
+        transition: var(--transition);
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &__contact{
+        font-family: var(--second-family);
+        font-size: 14px;
+        strong{
+            display: block;
+        }
+    }
+}
+.navwrap {
+}
+.nav {
+    margin-bottom: 42px;
+    li{
+        ul{
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+        }
+    }
+}
+.parent {
+}
 
 
 
