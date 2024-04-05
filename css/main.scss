@@ -669,6 +669,8 @@ body {
     &__video {
         grid-row: 2/3;
         grid-column: 2/3;
+        align-self: end;
+        padding-bottom: 39px;
         p{
             font-family: var(--second-family);
             font-weight: 300;
@@ -1214,6 +1216,7 @@ body.oh{
                 width: 100%;
             }
         }
+        
         span{
             cursor: pointer;
             &:after{
@@ -1235,6 +1238,16 @@ body.oh{
         }
         &.vis{
             display: flex;
+        }
+    }
+    &__2{
+        span{
+            &.vis{
+                color: var(--green);
+                &:before, &:after{
+                    display: none;
+                }
+            }
         }
     }
     &__3{

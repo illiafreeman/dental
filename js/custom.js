@@ -208,7 +208,7 @@ $('.header__menu-btn').click(function () {
     //$('.hamburger').toggleClass('open');
 });
 $('.menu__close').click(function () {
-    $('.menu, .menu__2, .menu__3, .nav span').removeClass('vis');
+    $('.menu, .menu__2, .menu__3, .nav span, .menu__2 span').removeClass('vis');
     $('body').removeClass('oh');
     //$('.hamburger').toggleClass('open');
 });
@@ -218,6 +218,7 @@ $('.nav span').click(function () {
 });
 $('.menu__2 span').click(function () {
     $('.menu__3').addClass('vis');
+    $(this).addClass('vis');
 });
 /*end menu*/
 

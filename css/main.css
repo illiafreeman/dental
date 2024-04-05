@@ -650,6 +650,8 @@ body {
 .about__video {
   grid-row: 2/3;
   grid-column: 2/3;
+  align-self: end;
+  padding-bottom: 39px;
 }
 .about__video p {
   font-family: var(--second-family);
@@ -1189,6 +1191,12 @@ body.oh {
 }
 .menu__2.vis, .menu__3.vis {
   display: flex;
+}
+.menu__2 span.vis {
+  color: var(--green);
+}
+.menu__2 span.vis:before, .menu__2 span.vis:after {
+  display: none;
 }
 .menu__3 {
   background: var(--white);
