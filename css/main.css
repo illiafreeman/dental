@@ -847,6 +847,11 @@ body {
   border-radius: 20px;
   position: relative;
   cursor: pointer;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+.promo-gal .swiper-slide:hover {
+  border-color: var(--green);
 }
 .promo-gal .swiper-slide:hover .promo__pic {
   transform: scale(1.1);

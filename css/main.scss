@@ -882,6 +882,8 @@ body {
         border-radius: 20px;
         position: relative;
         cursor: pointer;
+        border: 1px solid transparent;
+        transition: var(--transition);
         &:hover{
             .promo__pic{
                 transform: scale(1.1);
@@ -889,6 +891,7 @@ body {
             .promo__title{
                 color: var(--green)
             }
+            border-color: var(--green);
         }
     }
 }
