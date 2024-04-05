@@ -238,7 +238,6 @@ function modal() {
 	//console.log(offset);
 }
 $('.btn_modal').click(modal);
-
 $(document).on('click','.modal__close, .modal-wrap',function(){
 	var offset = window.innerWidth - document.body.offsetWidth;
 	$('body').removeClass('oh').css({'padding-right': offset, 'transition': 'all 0.5s ease-in-out;'});
@@ -264,7 +263,7 @@ $(document).keydown(function(event) {
 	}
 });
 
-
+$("#phone").mask("+7 (999) 999-99-99");
 
 
 

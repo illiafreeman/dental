@@ -406,7 +406,10 @@ body {
     &_center {
         text-align: center;
     }
-    &_h3 {}
+    &_modal {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
     &_why {}
 }
 .gal-inner{
@@ -1190,7 +1193,7 @@ body.oh{
         }
     }
     &__2, &__3{
-        background: var(--gray);
+        background: #f6f6f6;
         padding: 146px 32px 40px;
         display: flex;
         flex-direction: column;
@@ -1380,8 +1383,8 @@ body.oh{
     width: 780px;
     background: #fff;
     margin: 40px auto 40px;
-    border-radius: 75px;
-    box-shadow: 0px 0px 69px 5px #fff, 0px 1px 13px -9px #000 inset;
+    border-radius: 20px;
+    //box-shadow: 0px 0px 69px 5px #fff, 0px 1px 13px -9px #000 inset;
     display: none;
     &.vis{
         display: block;
@@ -1409,7 +1412,7 @@ body.oh{
         }
     }
     &__body{
-        padding: 120px 68px;
+        padding: 120px 70px 70px;
         position: relative;
     }
     &__desc{
@@ -1426,32 +1429,32 @@ body.oh{
         }
     }
     .formwrap{
+        font-family: var(--second-family);
         label:not(.btn){
             display: block;
-            margin-bottom: 34px;
+            margin-bottom: 24px;
             span{
-                color: #272727;
-                font-size: 16px;
-                font-weight: 500;
+                font-family: var(--second-family);
+                font-weight: 400;
+                font-size: 14px;
                 line-height: normal; 
                 display: block;
-                margin-bottom: 14px;
+                margin-bottom: 12px;
                 small{
                     font-size: 100%;
                     color: #929292; 
                 }
             }
             .input{
-                border-radius: 75px;
-                border: 1px solid #272727;
+                border-radius: 10px;
+                border: 1px solid var(--black);
                 background: #FFF; 
-                height: 74px;
-                padding: 0 40px;
-                width: 100%;
+                height: 64px;
+                padding: 0 20px;
+                width: 480px;
                 outline: none;
-                font-size: 20px; 
-                
-            
+                font-size: 18px; 
+                font-family: var(--second-family);
             }
             .input.error{
                 border-color: #e80d0d;
@@ -1467,16 +1470,36 @@ body.oh{
                 display: none;
             }
         }
-
-        
-        .btn{
+    }
+}
+.call{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 48px;
+    a{
+        font-weight: 600;
+        display: inline-block;
+        position: relative;
+        color: var(--black);
+        &:before {
+            content: "";
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
             width: 100%;
-            border: 0;
-            padding: 0;
+            
+            background: #acacac;
+            transition: var(--transition);
+        }
+        &:hover::before {
+            width: 0;
+            right: 0;
+            left: auto;
         }
     }
 }
-
 
 
 

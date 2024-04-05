@@ -403,6 +403,10 @@ body {
 .title_center {
   text-align: center;
 }
+.title_modal {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
 .stat {
   padding-top: 0;
 }
@@ -1145,7 +1149,7 @@ body.oh {
   color: var(--white);
 }
 .menu__2, .menu__3 {
-  background: var(--gray);
+  background: #f6f6f6;
   padding: 146px 32px 40px;
   display: flex;
   flex-direction: column;
@@ -1323,8 +1327,7 @@ body.oh {
   width: 780px;
   background: #fff;
   margin: 40px auto 40px;
-  border-radius: 75px;
-  box-shadow: 0px 0px 69px 5px #fff, 0px 1px 13px -9px #000 inset;
+  border-radius: 20px;
   display: none;
 }
 .modal.vis {
@@ -1351,7 +1354,7 @@ body.oh {
   height: 24px;
 }
 .modal__body {
-  padding: 120px 68px;
+  padding: 120px 70px 70px;
   position: relative;
 }
 .modal__desc {
@@ -1367,31 +1370,35 @@ body.oh {
 .modal__desc_confirm {
   margin-bottom: 0;
 }
+.modal .formwrap {
+  font-family: var(--second-family);
+}
 .modal .formwrap label:not(.btn) {
   display: block;
-  margin-bottom: 34px;
+  margin-bottom: 24px;
 }
 .modal .formwrap label:not(.btn) span {
-  color: #272727;
-  font-size: 16px;
-  font-weight: 500;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px;
   line-height: normal;
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 .modal .formwrap label:not(.btn) span small {
   font-size: 100%;
   color: #929292;
 }
 .modal .formwrap label:not(.btn) .input {
-  border-radius: 75px;
-  border: 1px solid #272727;
+  border-radius: 10px;
+  border: 1px solid var(--black);
   background: #FFF;
-  height: 74px;
-  padding: 0 40px;
-  width: 100%;
+  height: 64px;
+  padding: 0 20px;
+  width: 480px;
   outline: none;
-  font-size: 20px;
+  font-size: 18px;
+  font-family: var(--second-family);
 }
 .modal .formwrap label:not(.btn) .input.error {
   border-color: #e80d0d;
@@ -1406,10 +1413,33 @@ body.oh {
 .modal .formwrap label:not(.btn) .error__text {
   display: none;
 }
-.modal .formwrap .btn {
+
+.call {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 48px;
+}
+.call a {
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  color: var(--black);
+}
+.call a:before {
+  content: "";
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  border: 0;
-  padding: 0;
+  background: #acacac;
+  transition: var(--transition);
+}
+.call a:hover::before {
+  width: 0;
+  right: 0;
+  left: auto;
 }
 
 @media only screen and (max-width: 1280px) {
