@@ -1,7 +1,7 @@
 
 
 
-/*certificate carousel*/
+/*carousel*/
 if($('#stat-gal').length){
     var reviewGal = new Swiper('#stat-gal', {
         slidesPerView: 1.5,
@@ -171,9 +171,9 @@ if($('#textreview').length){
         }
     });
 }
-/*end certificate carousel*/
+/*end carousel*/
 
-/*certificate increase size*/
+/*fancybox*/
 if($('#star-gal a[data-fancybox]').length){
     Fancybox.bind('#star-gal [data-fancybox]', {
         Thumbs: {
@@ -188,9 +188,7 @@ if($('#smi-gal a[data-fancybox]').length){
         },
     });
 }
-/*end certificate increase size*/
-
-
+/*end fancyboxe*/
 
 /*fixed header*/
 $(window).scroll(function () {
@@ -203,28 +201,25 @@ $(window).scroll(function () {
 });
 /*end fixed header*/
 
-
-
-/*mobile header btns*/
+/*menu*/
 $('.header__menu-btn').click(function () {
-    $('.header__nav-wrap').toggleClass('vis');
-    $('body').toggleClass('oh open-menu');
-    $('.hamburger').toggleClass('open');
-    $('.header__tel').removeClass('vis');
+    $('.menu').addClass('vis');
+    $('body').addClass('oh');
+    //$('.hamburger').toggleClass('open');
 });
-$('.header__nav > .parent > button').click(function () {
-    $(this).parent().hasClass('vis') ? $(this).parent().removeClass('vis') : $(this).parent().addClass('vis');
-    $(this).parent().find('.parent').removeClass('vis');
+$('.menu__close').click(function () {
+    $('.menu, .menu__2, .menu__3, .nav span').removeClass('vis');
+    $('body').removeClass('oh');
+    //$('.hamburger').toggleClass('open');
 });
-$('.header__nav .parent ul li.parent button').click(function () {
-    $(this).parent().hasClass('vis') ? $(this).parent().removeClass('vis') : $(this).parent().addClass('vis');
+$('.nav span').click(function () {
+    $('.menu__2').addClass('vis');
+    $(this).addClass('vis');
 });
-$('.header__tel-btn').click(function () {
-    $('.header__tel').toggleClass('vis');
+$('.menu__2 span').click(function () {
+    $('.menu__3').addClass('vis');
 });
-/*end mobile header btns*/
-
-
+/*end menu*/
 
 /*animation on scroll*/
 if($('.wow').length){

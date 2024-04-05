@@ -1082,6 +1082,10 @@ body {
   left: auto;
 }
 
+body.oh {
+  padding-right: 17px;
+}
+
 .menu {
   position: fixed;
   top: 0;
@@ -1091,6 +1095,12 @@ body {
   background: var(--white);
   z-index: 100;
   overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+}
+.menu.vis {
+  opacity: 1;
+  visibility: visible;
 }
 .menu__container {
   width: 1180px;
@@ -1116,7 +1126,7 @@ body {
 .menu__main {
   position: relative;
   color: var(--white);
-  padding: 24px 66px 24px 0;
+  padding: 25px 66px 24px 0;
 }
 .menu__main:after {
   content: "";
@@ -1131,6 +1141,57 @@ body {
 }
 .menu__main a {
   color: var(--white);
+}
+.menu__2, .menu__3 {
+  background: var(--gray);
+  padding: 146px 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  display: none;
+}
+.menu__2 a, .menu__2 span, .menu__3 a, .menu__3 span {
+  color: var(--black);
+  font-family: var(--second-family);
+  font-weight: 500;
+  position: relative;
+}
+.menu__2 a:before, .menu__2 span:before, .menu__3 a:before, .menu__3 span:before {
+  content: "";
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  right: 0;
+  background: #6c6c6c;
+  transition: var(--transition);
+}
+.menu__2 a:hover::before, .menu__2 span:hover::before, .menu__3 a:hover::before, .menu__3 span:hover::before {
+  left: 0;
+  width: 100%;
+}
+.menu__2 span, .menu__3 span {
+  cursor: pointer;
+}
+.menu__2 span:after, .menu__3 span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 22px;
+  background: url(../img/chevron_black.svg) no-repeat right center;
+  top: 1px;
+  right: -16px;
+  transition: var(--transition);
+}
+.menu__2 span:hover:after, .menu__3 span:hover:after {
+  right: -20px;
+}
+.menu__2.vis, .menu__3.vis {
+  display: flex;
+}
+.menu__3 {
+  background: var(--white);
 }
 .menu__logo {
   margin-bottom: 58px;
@@ -1196,14 +1257,20 @@ body {
   display: block;
   position: absolute;
   width: 10px;
-  height: 18px;
+  height: 20px;
   background: url(../img/chevron_white.svg) no-repeat center center/contain;
-  top: 8px;
+  top: 7px;
   right: -23px;
   transition: var(--transition);
 }
 .nav > li > span:hover:after {
   right: -28px;
+}
+.nav > li > span.vis {
+  color: var(--green);
+}
+.nav > li > span.vis:before, .nav > li > span.vis:after {
+  display: none;
 }
 
 @media only screen and (max-width: 1280px) {

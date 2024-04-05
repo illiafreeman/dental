@@ -1128,6 +1128,9 @@ body {
         }
     }
 }
+body.oh{
+    padding-right: 17px;
+}
 .menu {
     position: fixed;
     top: 0;
@@ -1137,6 +1140,13 @@ body {
     background: var(--white);
     z-index: 100;
     overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    //transition: var(--transition);
+    &.vis{
+        opacity: 1;
+        visibility: visible;
+    }
     &__container {
         width: 1180px;
         margin: 0 auto;
@@ -1161,7 +1171,7 @@ body {
     &__main {
         position: relative;
         color: var(--white);
-        padding: 24px 66px 24px 0;
+        padding: 25px 66px 24px 0;
         &:after{
             content: '';
             display: block;
@@ -1176,6 +1186,59 @@ body {
         a{
             color: var(--white);
         }
+    }
+    &__2, &__3{
+        background: var(--gray);
+        padding: 146px 32px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        display: none;
+        a, span{
+            color: var(--black);
+            font-family: var(--second-family);
+            font-weight: 500;
+            position: relative;
+            &:before {
+                content: "";
+                height: 1px;
+                position: absolute;
+                bottom: 0;
+                width: 0;
+                right: 0;
+                background: #6c6c6c;
+                transition: var(--transition);
+            }
+            &:hover::before {
+                left: 0;
+                width: 100%;
+            }
+        }
+        span{
+            cursor: pointer;
+            &:after{
+                content: '';
+                display: block;
+                position: absolute;
+                width: 32px;
+                height: 22px;
+                background: url(../img/chevron_black.svg) no-repeat right center;
+                top: 1px;
+                right: -16px;
+                transition: var(--transition);
+            }
+            &:hover{
+                &:after{
+                    right: -20px;
+                }
+            }
+        }
+        &.vis{
+            display: flex;
+        }
+    }
+    &__3{
+        background: var(--white);
     }
     &__logo {
         margin-bottom: 58px;
@@ -1238,16 +1301,15 @@ body {
             }
         }
         &>span{
-           
             cursor: pointer;
             &:after{
                 content: '';
                 display: block;
                 position: absolute;
                 width: 10px;
-                height: 18px;
+                height: 20px;
                 background: url(../img/chevron_white.svg) no-repeat center center / contain;
-                top: 8px;
+                top: 7px;
                 right: -23px;
                 transition: var(--transition)
             }
@@ -1256,11 +1318,16 @@ body {
                     right: -28px;
                 }
             }
+            &.vis{
+                color: var(--green);
+                &:before, &:after{
+                    display: none;
+                }
+            }
         }
     }
 }
-.parent {
-}
+
 
 
 
