@@ -228,7 +228,41 @@ if($('.wow').length){
 }
 /*end animation on scroll*/
 
+function modal() {
+	var offset = window.innerWidth - document.body.offsetWidth ;
+	$('body').addClass('oh').css({'padding-right': offset, 'transition': 'all 0.5s ease-in-out;'});
+	$('.modal-bg').addClass('vis');
+	$('.modal-wrap').addClass('vis');
+	$('.modal[data-attr="modal_form"]').addClass('vis');
+	$('.scrollTop.vis').css({'right': 30 + offset + 'px'});
+	//console.log(offset);
+}
+$('.btn_modal').click(modal);
 
+$(document).on('click','.modal__close, .modal-wrap',function(){
+	var offset = window.innerWidth - document.body.offsetWidth;
+	$('body').removeClass('oh').css({'padding-right': offset, 'transition': 'all 0.5s ease-in-out;'});
+	$('.modal-bg').removeClass('vis');
+	$('.modal-wrap').removeClass('vis');
+	$('.modal').removeClass('vis');
+	$('.scrollTop.vis').css({'right': 30 + offset + 'px'});
+	$('.modal[data-attr="modal_review"] .modal__body .review__item-inner').remove();
+	
+});
+$(document).on('click','.modal',function(e){
+	e.stopPropagation();
+	
+});
+$(document).keydown(function(event) { 
+	if (event.keyCode == 27) { 
+		var offset = window.innerWidth - document.body.offsetWidth;
+		$('body').removeClass('oh').css({'padding-right': offset, 'transition': 'all 0.5s ease-in-out;'});
+		$('.modal-bg').removeClass('vis');
+		$('.modal-wrap').removeClass('vis');
+		$('.modal').removeClass('vis');
+		$('.scrollTop.vis').css({'right': 30 + offset + 'px'});
+	}
+});
 
 
 

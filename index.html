@@ -35,7 +35,7 @@
                     <a class="header__tel link" href="callto:+74993729490">+7 (499) 372-94-90</a>
                     <p class="header__address">Адрес: г. Москва, ул. Ельнинская, д. 14, корп.2 (м. Молодежная)</p>
                 </address>
-                <button class="btn btn_min"><span>Записаться на приём</span></button>
+                <button class="btn btn_min btn_modal"><span>Записаться на приём</span></button>
                 <div class="header__menu-btn">
                     <div class="hamburger">
                         <span></span>
@@ -111,7 +111,7 @@
                         <span>25 лет создаем идеальные улыбки</span> 
                         <span>Выбор звезд и экспертов</span>
                     </p>
-                    <button class="btn"><span>Записаться на приём</span></button>
+                    <button class="btn btn_modal"><span>Записаться на приём</span></button>
                 </div>
                 <img src="./img/intro.png" alt="" class="intro__pic">
             </div>
@@ -289,7 +289,7 @@
             <div class="container">
                 <h2 class="title title_h2">
                     <span>Чего опасаются люди<br>в стоматологии?</span>
-                    <button class="btn"><span>Записаться на консультацию</span></button>
+                    <button class="btn btn_modal"><span>Записаться на консультацию</span></button>
                 </h2>
                 <div class="fear__wrap">
                     <div class="fear__desc">
@@ -785,7 +785,7 @@
                             <p><strong>Адрес:</strong>&nbsp;г. Москва, ул. Ельнинская, д. 14, корп.2 (м. Молодежная)</p>
                             <p><strong>График работы:</strong>&nbsp;пн-пт: 9.00-21.00, сб-вс: 10.00-20.00</p>
                         </div>
-                        <button class="btn"><span>Записаться на приём</span></button>
+                        <button class="btn btn_modal"><span>Записаться на приём</span></button>
                     </div>
                     <div class="contact__picwrap">
                         <img class="contact__pic" src="./img/contact.jpg" alt="">
@@ -835,8 +835,38 @@
             </p>
         </div>
     </footer>
-
-
+    <div class="modal-bg"></div>
+    <div class="modal-wrap">
+        <div class="modal" data-attr="modal_form">
+            <div class="modal__body">
+                <div class="modal__desc">Оставьте ваши контакты, и мы свяжемся с вами в течение 20 минут!</div>
+                <form id="register-form" action="#" class="modal__form_forlistener formwrap">
+                    <label>
+                        <span>E-mail</span>
+                        <input class="input input_req" type="text" id="email" name="email">
+                        <span class="error__text">Пожалуйста, заполните это поле!</span>
+                    </label>
+                    <label>
+                        <span>Телефон </span>
+                        <input id="phone" class="input input_req" type="tel" name="phone" autocomplete="off">
+                        <span class="error__text">Пожалуйста, заполните это поле!</span>
+                    </label>
+                    <label>
+                        <span>Ссылка на веб-сайт <small>(если вы хотите увеличить конверсию или сделать редизайн)</small></span>
+                        <input class="input" type="text" id="website" name="website">
+                        <span class="error__text">Пожалуйста, заполните это поле!</span>
+                    </label>
+                    <button type="submit" class="btn btn_yellow send_btn">Отправить!</button>
+                    <div class="privacy">Нажимая "Отправить", вы соглашаетесь с нашей <a target="_blank" href="privacy.html">Политикой конфиденциальности</a></div>
+                </form>
+                <div class="modal__close">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L13 13M13 13L25 25M13 13L25 1M13 13L1 25" stroke="#272727" stroke-width="2"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
