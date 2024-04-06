@@ -1703,48 +1703,68 @@ body.oh{
         border-top: 1px solid var(--gray);
         margin: 56px 0;
     }
-    .readmore{
-        font-family: var(--second-family);
-        font-size: 16px;
-        color: var(--black);
-        margin-top: 28px;
-        display: inline-block;
+    
+}
+.readmore{
+    font-family: var(--second-family);
+    font-size: 16px;
+    color: var(--black);
+    margin-top: 28px;
+    display: inline-block;
+    &:before {
+        content: "";
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        background: #777777;
+        transition: var(--transition);
+    }
+    &:after{
+        content: "→";
+        display: flex;
+        position: absolute;
+        width: 42px;
+        height: 22px;
+        top: -1px;
+        right: -24px;
+        transition: var(--transition);
+        text-align: right;
+        align-content: center;
+        justify-content: flex-end;
+    }
+    &:hover{
         &:before {
-            content: "";
-            height: 1px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            left: 0;
-            background: #777777;
-            transition: var(--transition);
+            right: 0;
+            width: 0;
+            left: auto;
         }
         &:after{
-            content: "→";
-            display: flex;
-            position: absolute;
-            width: 42px;
-            height: 22px;
-            top: -1px;
-            right: -24px;
-            transition: var(--transition);
-            text-align: right;
-            align-content: center;
-            justify-content: flex-end;
-        }
-        &:hover{
-            &:before {
-                right: 0;
-                width: 0;
-                left: auto;
-            }
-            &:after{
-                right: -30px;
-            }
+            right: -30px;
         }
     }
 }
-
+.sert{
+    background: #f6f6f6;
+    &-gal {
+        .swiper-wrapper{
+            align-items: center;
+        }
+        .swiper-slide{
+            display: flex;
+            gap: 60px;
+            align-items: flex-end;
+        }
+        &__picwrap {
+            display: block;
+            overflow: hidden;
+            border-radius: 20px;
+            display: block;
+        }
+        &__pic {}
+    }
+}
 
 
 
