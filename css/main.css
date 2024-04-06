@@ -1342,8 +1342,8 @@ body.oh {
   height: 30px;
   border-radius: 16px;
   position: absolute;
-  top: 47px;
-  right: 58px;
+  top: 30px;
+  right: 30px;
   cursor: pointer;
   transition: var(--transition05);
   display: flex;
@@ -1358,7 +1358,7 @@ body.oh {
   height: 24px;
 }
 .modal__body {
-  padding: 120px 70px 70px;
+  padding: 70px;
   position: relative;
 }
 .modal__desc {
@@ -1463,13 +1463,40 @@ body.oh {
 .doc {
   display: flex;
   flex-direction: column;
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 0 12px 0 rgba(58, 58, 58, 0.12);
+  color: var(--black);
+}
+.doc__picwrap {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.doc__pic {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .doc__wrap {
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 38px 28px;
+  text-align: center;
+  gap: 24px;
 }
+.doc__name {
+  margin-bottom: 22px;
+}
+.doc__name span {
+  display: block;
+}
+.doc__about p strong {
+  display: block;
+}
+
 @media only screen and (max-width: 1280px) {
   h1, h2, h3 {
     margin-bottom: 20px;
