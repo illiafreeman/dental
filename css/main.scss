@@ -1600,6 +1600,72 @@ body.oh{
         }
     }
 }
+.doccard {
+    display: grid;
+    grid-template: auto auto/ 380px 1fr;
+    gap: 48px;
+    position: relative;
+    padding: 70px 40px;
+    background: var(--white);
+    border-radius: 20px;
+    color: var(--black);
+    &__picwrap {
+        border-radius: 20px;
+        overflow: hidden;
+        grid-row: 1/3;
+        grid-column: 1/2;
+    }
+    &__pic {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    &__desc {
+        p{
+            max-width: 510px;
+        }
+        h2{
+            margin-bottom: 22px;
+        }
+    }
+    &__btnwrap {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        align-self: end;
+    }
+    &__videowrap {
+        position: absolute;
+        width: 260px;
+        right: 40px;
+        bottom: 70px;
+    }
+    &__videoinner {
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        padding-top: 56.25%;
+        iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%
+        }
+    }
+}
+.content {
+    ul{
+        li{
+
+        }
+    }
+    .readmore{
+        
+    }
+}
 
 
 

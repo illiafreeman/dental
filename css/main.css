@@ -1536,6 +1536,62 @@ body.oh {
   display: block;
 }
 
+.doccard {
+  display: grid;
+  grid-template: auto auto/380px 1fr;
+  gap: 48px;
+  position: relative;
+  padding: 70px 40px;
+  background: var(--white);
+  border-radius: 20px;
+  color: var(--black);
+}
+.doccard__picwrap {
+  border-radius: 20px;
+  overflow: hidden;
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+.doccard__pic {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.doccard__desc p {
+  max-width: 510px;
+}
+.doccard__desc h2 {
+  margin-bottom: 22px;
+}
+.doccard__btnwrap {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  align-self: end;
+}
+.doccard__videowrap {
+  position: absolute;
+  width: 260px;
+  right: 40px;
+  bottom: 70px;
+}
+.doccard__videoinner {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 56.25%;
+}
+.doccard__videoinner iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media only screen and (max-width: 1280px) {
   h1, h2, h3 {
     margin-bottom: 20px;
