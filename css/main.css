@@ -359,6 +359,9 @@ body {
 .article {
   padding: 120px 0;
 }
+.article_first {
+  padding-top: 0;
+}
 .article_black {
   background: var(--black);
   color: var(--white);
@@ -1443,6 +1446,30 @@ body.oh {
   left: auto;
 }
 
+.breadcrumbs {
+  padding: 50px 0;
+  display: flex;
+}
+.breadcrumbs li a {
+  color: var(--white);
+}
+
+.doclist {
+  display: grid;
+  grid-template: auto/1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.doc {
+  display: flex;
+  flex-direction: column;
+}
+.doc__wrap {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 @media only screen and (max-width: 1280px) {
   h1, h2, h3 {
     margin-bottom: 20px;
