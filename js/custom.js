@@ -181,10 +181,6 @@ if($('#sert-gal').length){
             nextEl: '#sert-next',
             prevEl: '#sert-prev',
         },
-        pagination: {
-            el: "#sert-pagination",
-            clickable: true,
-        },
         breakpoints: {
             480: {
                 slidesPerView: 2.5,

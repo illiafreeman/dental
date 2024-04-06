@@ -195,6 +195,10 @@ body {
   white-space: nowrap;
 }
 
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
 .wow {
   visibility: hidden;
 }
@@ -383,6 +387,11 @@ body {
 }
 .article_black .swiper-button-next.swiper-button-disabled:after:hover, .article_black .swiper-button-prev.swiper-button-disabled:after:hover {
   cursor: not-allowed;
+}
+.article_black .review-text .swiper-slide {
+  background: var(--white);
+  color: var(--black);
+  border-radius: 20px;
 }
 
 .intro {
@@ -932,6 +941,7 @@ body {
   height: auto;
   padding: 34px 22px;
   font-family: var(--second-family);
+  border-radius: 20px;
 }
 .review-text .swiper-slide a {
   text-decoration: underline;
