@@ -78,6 +78,10 @@ h2{
     margin-bottom: 60px;
 }
 h3{
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+h4{
     font-size: 18px;
     margin-bottom: 16px;
 }
@@ -407,13 +411,14 @@ body {
 .title {
     &_h1 {}
     &_h2 {}
+    &_h3 {
+    }
+    &_h4 {
+    }
     &_center {
         text-align: center;
     }
-    &_modal {
-        font-size: 32px;
-        margin-bottom: 32px;
-    }
+    
     &_why {}
 }
 .gal-inner{
@@ -1493,7 +1498,6 @@ body.oh{
             bottom: 0;
             left: 0;
             width: 100%;
-            
             background: #acacac;
             transition: var(--transition);
         }
@@ -1508,8 +1512,44 @@ body.oh{
     padding: 50px 0 68px;
     display: flex;
     li{
+        padding: 0 20px 0 15px;
+        background: url(../img/chevron_green.svg) no-repeat left center;
+        display: flex;
+        align-items: center;
         a{
             color: var(--white); 
+            text-transform: uppercase;
+            display: inline-block;
+            &:before {
+                content: "";
+                height: 1px;
+                position: absolute;
+                bottom: 0;
+                width: 0;
+                right: 0;
+                background: #777777;
+                transition: var(--transition);
+            }
+            &:hover::before {
+                width: 100%;
+                left: 0
+            }
+        }
+        span{
+            text-transform: uppercase;
+            display: inline-block;
+            cursor: default;
+            position: relative;
+            &:before {
+                content: "";
+                height: 1px;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                right: 0;
+                background: #777777;
+                transition: var(--transition);
+            }
         }
     }
 }
