@@ -1600,15 +1600,18 @@ body.oh{
         }
     }
 }
+.doccard-wrap{
+    padding: 70px 40px;
+    background: var(--white);
+    border-radius: 20px;
+    color: var(--black);
+}
 .doccard {
     display: grid;
     grid-template: auto auto/ 380px 1fr;
     gap: 48px;
     position: relative;
-    padding: 70px 40px;
-    background: var(--white);
-    border-radius: 20px;
-    color: var(--black);
+    margin-bottom: 40px;
     &__picwrap {
         border-radius: 20px;
         overflow: hidden;
@@ -1636,8 +1639,8 @@ body.oh{
     &__videowrap {
         position: absolute;
         width: 260px;
-        right: 40px;
-        bottom: 70px;
+        right: 0;
+        bottom: 0;
     }
     &__videoinner {
         width: 100%;
@@ -1657,13 +1660,73 @@ body.oh{
     }
 }
 .content {
+    font-family: var(--second-family);
+    font-size: 18px;
     ul{
         li{
-
+            display: block;
+            padding-left: 28px;
+            position: relative;
+            margin-bottom: 20px;
+            &:before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: 9px;
+                left: 0;
+                background: var(--green);
+                border-radius: 5px;            
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
         }
     }
+    hr{
+        border: 0;
+        border-top: 1px solid var(--gray);
+        margin: 56px 0;
+    }
     .readmore{
-        
+        font-family: var(--second-family);
+        font-size: 16px;
+        color: var(--black);
+        margin-top: 28px;
+        display: inline-block;
+        &:before {
+            content: "";
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            background: #777777;
+            transition: var(--transition);
+        }
+        &:after{
+            content: "→";
+            display: flex;
+            position: absolute;
+            width: 42px;
+            height: 22px;
+            top: -1px;
+            right: -24px;
+            transition: var(--transition);
+            text-align: right;
+            align-content: center;
+            justify-content: flex-end;
+        }
+        &:hover{
+            &:before {
+                right: 0;
+                width: 0;
+                left: auto;
+            }
+            &:after{
+                right: -30px;
+            }
+        }
     }
 }
 

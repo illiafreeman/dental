@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Evolventa";
   src: url("../font/EvolventaRegular.ttf") format("truetype");
@@ -1536,15 +1537,19 @@ body.oh {
   display: block;
 }
 
+.doccard-wrap {
+  padding: 70px 40px;
+  background: var(--white);
+  border-radius: 20px;
+  color: var(--black);
+}
+
 .doccard {
   display: grid;
   grid-template: auto auto/380px 1fr;
   gap: 48px;
   position: relative;
-  padding: 70px 40px;
-  background: var(--white);
-  border-radius: 20px;
-  color: var(--black);
+  margin-bottom: 40px;
 }
 .doccard__picwrap {
   border-radius: 20px;
@@ -1572,8 +1577,8 @@ body.oh {
 .doccard__videowrap {
   position: absolute;
   width: 260px;
-  right: 40px;
-  bottom: 70px;
+  right: 0;
+  bottom: 0;
 }
 .doccard__videoinner {
   width: 100%;
@@ -1590,6 +1595,73 @@ body.oh {
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+.content {
+  font-family: var(--second-family);
+  font-size: 18px;
+}
+.content ul li {
+  display: block;
+  padding-left: 28px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.content ul li:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 9px;
+  left: 0;
+  background: var(--green);
+  border-radius: 5px;
+}
+.content ul li:last-child {
+  margin-bottom: 0;
+}
+.content hr {
+  border: 0;
+  border-top: 1px solid var(--gray);
+  margin: 56px 0;
+}
+.content .readmore {
+  font-family: var(--second-family);
+  font-size: 16px;
+  color: var(--black);
+  margin-top: 28px;
+  display: inline-block;
+}
+.content .readmore:before {
+  content: "";
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  background: #777777;
+  transition: var(--transition);
+}
+.content .readmore:after {
+  content: "→";
+  display: flex;
+  position: absolute;
+  width: 42px;
+  height: 22px;
+  top: -1px;
+  right: -24px;
+  transition: var(--transition);
+  text-align: right;
+  align-content: center;
+  justify-content: flex-end;
+}
+.content .readmore:hover:before {
+  right: 0;
+  width: 0;
+  left: auto;
+}
+.content .readmore:hover:after {
+  right: -30px;
 }
 
 @media only screen and (max-width: 1280px) {
