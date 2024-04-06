@@ -729,7 +729,7 @@ body {
         align-items: stretch;
     }
     &__desc {
-        h3{
+        h4{
             height: 66px;
             padding: 36px 22px 0;
             margin-bottom: 24px;
@@ -1003,12 +1003,27 @@ body {
         font-size: 18px;
         hr{
             margin: 30px 0;
-            color: #f9ffae;
+            border: 0;
+            border-bottom: 1px solid var(--green);
         }
         a{
-            color: #76a424;
+            color: var(--black);
+            position: relative;
+            &:after{
+                content: "";
+                height: 1px;
+                position: absolute;
+                bottom: 0;
+                width: 0;
+                right: 0;
+                background: #777777;
+                transition: var(--transition);
+            }
             &:hover{
-                text-decoration: underline;
+                &:after{
+                    width: 100%;
+                    left: 0;
+                }
             }
         }
     }

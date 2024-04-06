@@ -701,7 +701,7 @@ body {
 .eq-gal .swiper-wrapper {
   align-items: stretch;
 }
-.eq-gal__desc h3 {
+.eq-gal__desc h4 {
   height: 66px;
   padding: 36px 22px 0;
   margin-bottom: 24px;
@@ -958,13 +958,26 @@ body {
 }
 .contact__text hr {
   margin: 30px 0;
-  color: #f9ffae;
+  border: 0;
+  border-bottom: 1px solid var(--green);
 }
 .contact__text a {
-  color: #76a424;
+  color: var(--black);
+  position: relative;
 }
-.contact__text a:hover {
-  text-decoration: underline;
+.contact__text a:after {
+  content: "";
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  right: 0;
+  background: #777777;
+  transition: var(--transition);
+}
+.contact__text a:hover:after {
+  width: 100%;
+  left: 0;
 }
 .contact__picwrap {
   overflow: hidden;
