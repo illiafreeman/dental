@@ -1178,7 +1178,7 @@ body.oh{
     height: 100%;
     background: var(--white);
     z-index: 100;
-    overflow: auto;
+    overflow-y: scroll;
     opacity: 0;
     visibility: hidden;
     //transition: var(--transition);
@@ -1280,11 +1280,13 @@ body.oh{
     &__2{
         span{
             &.vis{
-                color: var(--green);
-                &:before, &:after{
+                &:after{
                     display: none;
                 }
-            }
+                &:before{
+                    display: block;
+                    width: 100%;
+                }            }
         }
     }
     &__3{

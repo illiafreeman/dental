@@ -1128,7 +1128,7 @@ body.oh {
   height: 100%;
   background: var(--white);
   z-index: 100;
-  overflow: auto;
+  overflow-y: scroll;
   opacity: 0;
   visibility: hidden;
 }
@@ -1224,11 +1224,12 @@ body.oh {
 .menu__2.vis, .menu__3.vis {
   display: flex;
 }
-.menu__2 span.vis {
-  color: var(--green);
-}
-.menu__2 span.vis:before, .menu__2 span.vis:after {
+.menu__2 span.vis:after {
   display: none;
+}
+.menu__2 span.vis:before {
+  display: block;
+  width: 100%;
 }
 .menu__3 {
   background: var(--white);
