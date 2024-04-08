@@ -283,14 +283,16 @@ $(document).on('click','.modal',function(e){
 	
 });
 $(document).keydown(function(event) { 
-	if (event.keyCode == 27) { 
-		var offset = window.innerWidth - document.body.offsetWidth;
-		$('body').removeClass('oh').css({'padding-right': offset, 'transition': 'all 0.5s ease-in-out;'});
-		$('.modal-bg').removeClass('vis');
-		$('.modal-wrap').removeClass('vis');
-		$('.modal').removeClass('vis');
-		$('.scrollTop.vis').css({'right': 30 + offset + 'px'});
-	}
+    if($('.modal-wrap').hasClass('vis')){
+        if (event.keyCode == 27) { 
+            var offset = window.innerWidth - document.body.offsetWidth;
+            $('body').removeClass('oh').css({'padding-right': offset, 'transition': 'all 0.5s ease-in-out;'});
+            $('.modal-bg').removeClass('vis');
+            $('.modal-wrap').removeClass('vis');
+            $('.modal').removeClass('vis');
+            $('.scrollTop.vis').css({'right': 30 + offset + 'px'});
+        }
+    }
 });
 /*end menu*/
 
