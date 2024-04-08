@@ -246,8 +246,9 @@ $('.nav span').click(function () {
     $(this).addClass('vis');
 });
 $('.menu__2 span').click(function () {
-    $('.menu__3').addClass('vis');
-    $(this).addClass('vis');
+    var level = $(this).data('menu');
+    $('.menu__3').removeClass('vis');
+    $('#menu_' + level).addClass('vis');
 });
 /*end menu*/
 
