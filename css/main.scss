@@ -1319,7 +1319,7 @@ body.oh{
     margin-bottom: 42px;
     display: flex;
     flex-direction: column;
-    gap: 34px;
+    gap: 26px;
     li{
         ul{
             opacity: 0;
@@ -1330,8 +1330,9 @@ body.oh{
     &>li{
         &>a, span{
             font-family: var(--second-family);
+            font-weight: 500;
             font-weight: 600;
-            font-size: 22px;
+            font-size: 20px;
             text-transform: uppercase;
             display: inline-block;
             position: relative;
@@ -1356,10 +1357,11 @@ body.oh{
                 content: '';
                 display: block;
                 position: absolute;
-                width: 10px;
+                width: 40px;
                 height: 20px;
-                background: url(../img/chevron_white.svg) no-repeat center center / contain;
-                top: 7px;
+                background: url(../img/chevron_white.svg) no-repeat right center / contain;
+                background-size: 8px 16px;
+                top: 5px;
                 right: -23px;
                 transition: var(--transition)
             }
