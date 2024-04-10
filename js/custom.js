@@ -24,6 +24,10 @@ if($('#stat-gal').length){
                 slidesPerView: 3,
                 spaceBetween: 30,
             },
+            1025: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
         }
     });
 }
@@ -44,6 +48,10 @@ if($('#star-gal').length){
             768: {
                 slidesPerView: 3,
                 spaceBetween: 60,
+            },
+            1025: {
+                slidesPerView: 3,
+                spaceBetween: 20,
             },
         }
     });
