@@ -439,7 +439,7 @@ body {
 }
 .galwrap {
     position: relative;
-    padding: 0 80px;
+    margin: 0 60px;
 }
 .stat-gal {
     &__am {
@@ -488,10 +488,10 @@ body {
 .swiper-button {
 }
 .swiper-button-prev {
-    left: 0;
+    left: -60px;
 }
 .swiper-button-next {
-    right: 0;
+    right: -60px;
 }
 .swiper-button-next, .swiper-button-prev{
     &:after{
@@ -503,9 +503,6 @@ body {
 }
 .star {
     background: #f6f6f6;
-    .galwrap {
-        padding: 0 50px;
-    }
 }
 
 .star-gal {

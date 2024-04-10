@@ -428,7 +428,7 @@ body {
 
 .galwrap {
   position: relative;
-  padding: 0 80px;
+  margin: 0 60px;
 }
 
 .stat-gal__am {
@@ -466,11 +466,11 @@ body {
 }
 
 .swiper-button-prev {
-  left: 0;
+  left: -60px;
 }
 
 .swiper-button-next {
-  right: 0;
+  right: -60px;
 }
 
 .swiper-button-next:after, .swiper-button-prev:after {
@@ -481,9 +481,6 @@ body {
 
 .star {
   background: #f6f6f6;
-}
-.star .galwrap {
-  padding: 0 50px;
 }
 
 .star-gal .swiper-slide {
@@ -1718,13 +1715,10 @@ body.oh {
     font-size: 26px;
   }
   h2 {
-    font-size: 18px;
+    font-size: 22px;
   }
   h3 {
     font-size: 16px;
-  }
-  p {
-    font-size: 13px;
   }
   .container {
     width: 100%;
