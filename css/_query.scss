@@ -48,13 +48,10 @@
     .intro {
         padding: 0 0 40px;
     }
-    .interier{
-        gap: 40px;
-    }
     .interier__title {
         font-size: 26px;
     }
-    .adv__wrap{
+    .interier, .adv__wrap, .about__wrap, .contact__wrap{
         gap: 40px;
     }
     .adv__desc p {
@@ -64,14 +61,21 @@
         width: 70%;
         min-width: 70%;
     }
-    .about__wrap{
-        gap: 40px;
-    }
     .about__videowrap {
         width: auto;
     }
-
-
+    .review__servlist{
+        li{
+            a{
+                img{
+                    transform: scale(.8);
+                }
+            }
+        }
+    }
+    .footer__wrap {
+        grid-template: repeat(3, auto)/1fr 2.5fr 0.5fr;
+    }
 
 
 

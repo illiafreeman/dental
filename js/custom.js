@@ -126,6 +126,10 @@ if($('#promo-gal').length){
                 slidesPerView: 3,
                 spaceBetween: 20,
             },
+            1025: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
         }
     });
 }
@@ -151,6 +155,10 @@ if($('#videoreview').length){
                 slidesPerView: 3,
                 spaceBetween: 20,
             },
+            1025: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
         }
     });
 }
@@ -173,6 +181,10 @@ if($('#textreview').length){
                 spaceBetween: 20,
             },
             768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1025: {
                 slidesPerView: 2,
                 spaceBetween: 20,
             },

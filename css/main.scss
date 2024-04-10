@@ -934,14 +934,16 @@ body {
         background: var(--white);
         border-radius: 20px;
         li{
+            display: flex;
+            justify-content: center;
             a{
-                display: block;
+                display: inline-block;
                 transition: var(--transition);
                 &:hover{
                     transform: scale(1.05);
                 }
                 img{
-
+                    
                 }
             }
         }
@@ -1060,7 +1062,7 @@ body {
     &__contact {
         display: grid;
         grid-template: auto auto/auto auto;
-        grid-gap: 20px 0;
+        grid-gap: 20px;
         strong{
             display: block;
         }
