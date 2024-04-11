@@ -73,8 +73,83 @@
     .footer__wrap {
         grid-template: repeat(3, auto)/1fr 2.5fr 0.5fr;
     }
-
-
+    .menu{
+        background: var(--black);
+        width: 100%;
+        &__container{
+            width: 400px;
+            display: block;
+            padding: 0 20px;
+        }
+        &__main{
+            padding: 20px 0;
+            &:after{
+                display: none;
+                padding-right: 0;
+            }
+            .nav, .menu__soc, .menu__contact{
+                text-align: center;
+                justify-content: center;
+            }
+            .nav{
+                margin-bottom: 62px;
+                gap: 28px;
+                &>li{
+                    &>a, span{
+                        font-size: 16px;
+                    }
+                    &>span{
+                        cursor: pointer;
+                        &:after{
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            width: 40px;
+                            height: 20px;
+                            background: url(../img/chevron_white.svg) no-repeat right center / contain;
+                            background-size: 8px 12px;
+                            top: 2px;
+                            right: -23px;
+                            transition: var(--transition)
+                        }
+                        &:hover{
+                            &:after{
+                                right: -28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__logo {
+            margin-bottom: 48px;
+            width: 170px;
+        }
+        &__close{
+            width: 20px;
+            height: 20px;
+            top: 28px;
+            right: 20px;
+            svg{
+                fill: var(--white);
+            }
+        }
+        &__soc {
+            gap: 12px;
+            margin-bottom: 48px;
+        }
+        &__soclink{
+            width: 22px;
+            height: 22px;
+            display: block;
+        }
+        &__contact {
+            font-size: 12px;
+            p{
+                margin-bottom: 12px;
+            }
+        }
+    }
 
 
 

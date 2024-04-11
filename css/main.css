@@ -1152,6 +1152,7 @@ body.oh {
   right: 8px;
   transition: var(--transition);
   cursor: pointer;
+  z-index: 100;
 }
 .menu__close svg {
   fill: var(--black);
@@ -1773,6 +1774,79 @@ body.oh {
   }
   .footer__wrap {
     grid-template: repeat(3, auto)/1fr 2.5fr 0.5fr;
+  }
+  .menu {
+    background: var(--black);
+    width: 100%;
+  }
+  .menu__container {
+    width: 400px;
+    display: block;
+    padding: 0 20px;
+  }
+  .menu__main {
+    padding: 20px 0;
+  }
+  .menu__main:after {
+    display: none;
+    padding-right: 0;
+  }
+  .menu__main .nav, .menu__main .menu__soc, .menu__main .menu__contact {
+    text-align: center;
+    justify-content: center;
+  }
+  .menu__main .nav {
+    margin-bottom: 62px;
+    gap: 28px;
+  }
+  .menu__main .nav > li > a, .menu__main .nav > li span {
+    font-size: 16px;
+  }
+  .menu__main .nav > li > span {
+    cursor: pointer;
+  }
+  .menu__main .nav > li > span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background: url(../img/chevron_white.svg) no-repeat right center/contain;
+    background-size: 8px 12px;
+    top: 2px;
+    right: -23px;
+    transition: var(--transition);
+  }
+  .menu__main .nav > li > span:hover:after {
+    right: -28px;
+  }
+  .menu__logo {
+    margin-bottom: 48px;
+    width: 170px;
+  }
+  .menu__close {
+    width: 20px;
+    height: 20px;
+    top: 28px;
+    right: 20px;
+  }
+  .menu__close svg {
+    fill: var(--white);
+  }
+  .menu__soc {
+    gap: 12px;
+    margin-bottom: 48px;
+  }
+  .menu__soclink {
+    width: 22px;
+    height: 22px;
+    display: block;
+  }
+  .menu__contact {
+    font-size: 12px;
+  }
+  .menu__contact p {
+    margin-bottom: 12px;
   }
 }
 @media only screen and (max-width: 1024px) {

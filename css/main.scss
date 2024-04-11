@@ -1201,6 +1201,7 @@ body.oh{
         right: 8px;
         transition: var(--transition);
         cursor: pointer;
+        z-index: 100;
         svg{
             fill: var(--black);
         }
