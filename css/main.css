@@ -1778,7 +1778,7 @@ body.oh {
     font-size: 14px;
   }
   h1, h2, h3 {
-    margin-bottom: 20px;
+    margin-bottom: 32px;
   }
   h1 {
     font-size: 26px;
@@ -1789,11 +1789,51 @@ body.oh {
   h3 {
     font-size: 16px;
   }
-  .container {
-    width: 100%;
+  .intro {
+    padding: 0 0 20px;
+  }
+  .intro__subdesc span {
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+  .btn {
+    height: 38px;
+    padding: 0 16px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .swiper-button {
+    display: none;
+  }
+  .galwrap {
+    margin: 0 -40px;
+  }
+  .stat-gal__am {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .stat-gal__am span {
+    font-size: 16px;
+  }
+  .stat-gal__desc {
+    font-size: 14px;
+  }
+  .stat-gal .swiper-wrapper {
     padding: 0 40px;
   }
-  .header__contact {
-    display: none;
+  .stat-gal .swiper-wrapper .swiper-slide {
+    text-align: left;
+  }
+  .swiper-pagination {
+    margin-top: 28px;
+  }
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    margin: 0 8px !important;
+  }
+  .article {
+    padding: 50px 0;
   }
 }/*# sourceMappingURL=main.css.map */

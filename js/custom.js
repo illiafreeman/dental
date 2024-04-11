@@ -5,12 +5,8 @@
 if($('#stat-gal').length){
     var reviewGal = new Swiper('#stat-gal', {
         slidesPerView: 1.5,
-        spaceBetween: 20,
+        spaceBetween: 12,
         freeMode: true,
-        navigation: {
-            nextEl: '#stat-next',
-            prevEl: '#stat-prev',
-        },
         pagination: {
             el: "#stat-pagination",
             clickable: true,
@@ -18,15 +14,17 @@ if($('#stat-gal').length){
         breakpoints: {
             480: {
                 slidesPerView: 2.5,
-                spaceBetween: 30,
             },
             768: {
-                slidesPerView: 3,
-                spaceBetween: 30,
+                slidesPerView: 2.5,
             },
             1025: {
                 slidesPerView: 2,
                 spaceBetween: 30,
+                navigation: {
+                    nextEl: '#stat-next',
+                    prevEl: '#stat-prev',
+                },
             },
         }
     });
@@ -34,7 +32,7 @@ if($('#stat-gal').length){
 if($('#star-gal').length){
     var review = new Swiper('#star-gal', {
         slidesPerView: 1.5,
-        spaceBetween: 20,
+        spaceBetween: 1,
         freeMode: true,
         navigation: {
             nextEl: '#star-next',
@@ -42,16 +40,17 @@ if($('#star-gal').length){
         },
         breakpoints: {
             480: {
-                slidesPerView: 2.5,
-                spaceBetween: 30,
+                slidesPerView: 1.5,
             },
             768: {
-                slidesPerView: 3,
-                spaceBetween: 60,
+                slidesPerView: 2.5,
             },
             1025: {
                 slidesPerView: 3,
                 spaceBetween: 20,
+            },
+            1281: {
+                spaceBetween: 60,
             },
         }
     });
