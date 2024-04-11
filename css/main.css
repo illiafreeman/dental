@@ -1819,11 +1819,18 @@ body.oh {
   .stat-gal__desc {
     font-size: 14px;
   }
-  .stat-gal .swiper-wrapper {
-    padding: 0 40px;
-  }
   .stat-gal .swiper-wrapper .swiper-slide {
     text-align: left;
+  }
+  .stat-gal .swiper-wrapper, .stat-gal .swiper-wrapper, .eq-gal .swiper-wrapper {
+    padding: 0 40px;
+  }
+  .smi .galwrap {
+    padding: 0 40px;
+  }
+  .smi-gal__desc {
+    font-size: 16px;
+    margin-bottom: 20px;
   }
   .swiper-pagination {
     margin-top: 28px;
@@ -1861,6 +1868,15 @@ body.oh {
     border-radius: 12px;
   }
   .about__desc p {
+    font-size: 16px;
+  }
+  .eq-gal__desc h4 {
+    margin-bottom: 6px;
+  }
+  .why__list {
+    gap: 20px;
+  }
+  .why__list li span {
     font-size: 16px;
   }
 }/*# sourceMappingURL=main.css.map */

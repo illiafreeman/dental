@@ -59,7 +59,7 @@ if($('#star-gal').length){
 if($('#eq-gal').length){
     var review = new Swiper('#eq-gal', {
         slidesPerView: 1.5,
-        spaceBetween: 20,
+        spaceBetween: 12,
         freeMode: true,
         navigation: {
             nextEl: '#eq-next',
@@ -72,11 +72,16 @@ if($('#eq-gal').length){
         breakpoints: {
             480: {
                 slidesPerView: 2.5,
-                spaceBetween: 20,
             },
             768: {
+                slidesPerView: 2.5,
+            },
+            1025: {
                 slidesPerView: 3,
                 spaceBetween: 20,
+            },
+            1281: {
+
             },
         }
     });
@@ -84,8 +89,8 @@ if($('#eq-gal').length){
 if($('#smi-gal').length){
     var review = new Swiper('#smi-gal', {
         slidesPerView: 1,
-        freeMode: true,
         autoHeight: true,
+        effect: 'flip',
         navigation: {
             nextEl: '#smi-next',
             prevEl: '#smi-prev',
