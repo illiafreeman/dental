@@ -1148,11 +1148,13 @@ body.oh {
   position: absolute;
   width: 34px;
   height: 34px;
-  background: url(../img/close.svg) no-repeat center center/contain;
   top: 34px;
-  right: 3px;
+  right: 8px;
   transition: var(--transition);
   cursor: pointer;
+}
+.menu__close svg {
+  fill: var(--black);
 }
 .menu__close:hover {
   transform: rotate(180deg);
