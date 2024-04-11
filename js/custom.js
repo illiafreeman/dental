@@ -112,7 +112,7 @@ if($('#smi-gal').length){
 if($('#promo-gal').length){
     var review = new Swiper('#promo-gal', {
         slidesPerView: 1.5,
-        spaceBetween: 20,
+        spaceBetween: 12,
         freeMode: true,
         navigation: {
             nextEl: '#promo-next',
@@ -125,14 +125,12 @@ if($('#promo-gal').length){
         breakpoints: {
             480: {
                 slidesPerView: 2.5,
-                spaceBetween: 20,
             },
             768: {
-                slidesPerView: 3,
-                spaceBetween: 20,
+                slidesPerView: 2.5,
             },
             1025: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 20,
             },
         }
@@ -141,7 +139,7 @@ if($('#promo-gal').length){
 if($('#videoreview').length){
     var review = new Swiper('#videoreview', {
         slidesPerView: 1.5,
-        spaceBetween: 20,
+        spaceBetween: 12,
         freeMode: true,
         navigation: {
             nextEl: '#videoreview-next',
@@ -154,14 +152,12 @@ if($('#videoreview').length){
         breakpoints: {
             480: {
                 slidesPerView: 2.5,
-                spaceBetween: 20,
             },
             768: {
-                slidesPerView: 3,
-                spaceBetween: 20,
+                slidesPerView: 2.5,
             },
             1025: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 20,
             },
         }

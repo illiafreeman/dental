@@ -133,7 +133,7 @@
             }
         }
     }
-    .stat-gal, .stat-gal, .eq-gal{
+    .stat-gal, .stat-gal, .eq-gal, .promo-gal, .videoreview{
         .swiper-wrapper{
             padding: 0 40px;
         }
@@ -181,8 +181,19 @@
     .interier__videowrap {
         width: 100%;
     }
-    .interier__videoinner, .adv__picwrap, .fear__desc div, .fear__picwrap, .about__picwrap, .about__videoinner {
-        border-radius: 12px;
+    .why__picwrap,
+    .smi-gal__picwrap,
+    .team__picwrap,
+    .interier__videoinner, 
+    .adv__picwrap, 
+    .fear__desc div, 
+    .fear__picwrap, 
+    .eq-gal .swiper-slide,
+    .about__picwrap, 
+    .about__videoinner, 
+    .promo-gal .swiper-slide,
+    .videoreview__wrap {
+        border-radius: 10px;
     }
     .about__desc p {
         font-size: 16px;
@@ -196,13 +207,15 @@
             font-size: 16px;
         }
     }
-
-
-
-
-
-
-
+    .team__wrap {
+        grid-gap: 20px 40px;
+    }
+    .team__desc {
+        font-size: 16px;
+    }
+    .promo__title {
+        font-size: 16px;
+    }
 
 
 
