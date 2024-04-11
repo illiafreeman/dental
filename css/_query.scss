@@ -361,4 +361,8 @@
 
 
 }  
-   
+@media only screen and (max-width: 480px) {
+    .menu__container, .menu__2, .menu__3 {
+        width: 100%;
+    }
+}   
