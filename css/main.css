@@ -1855,15 +1855,28 @@ body.oh {
   .menu__contact p {
     margin-bottom: 12px;
   }
-  .menu__2, .menu__3 {
-    padding: 100px 20px 60px;
-    position: absolute;
+  .menu__levelwrap {
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    bottom: 0;
     height: 100%;
     z-index: 100;
     overflow-y: scroll;
+    display: none;
+  }
+  .menu__levelwrap.vis {
+    display: block;
+  }
+  .menu__levelwrap_2 {
+    background: var(--gray);
+  }
+  .menu__2, .menu__3 {
+    padding: 100px 20px 60px;
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
   }
   .menu__2 {
     background: #f6f6f6;

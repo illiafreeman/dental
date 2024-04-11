@@ -151,15 +151,28 @@
                 margin-bottom: 12px;
             }
         }
-        &__2, &__3{
-            padding: 100px 20px 60px;
-            position: absolute;
+        &__levelwrap{
+            position: fixed;
             top: 0;
             right: 0;
             left: 0;
+            bottom: 0;
             height: 100%;
             z-index: 100;
             overflow-y: scroll;
+            display: none;
+            &.vis{
+                display: block;
+            }
+            &_2{
+                background: var(--gray);
+            }
+        }
+        &__2, &__3{
+            padding: 100px 20px 60px;
+            width: 400px;
+            margin: 0 auto;
+            position: relative;
         }
         &__2{
             background: #f6f6f6;

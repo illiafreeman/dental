@@ -258,11 +258,12 @@ $('.header__menu-btn').click(function () {
     //$('.hamburger').toggleClass('open');
 });
 $('.menu__close, .menu__levelclose').click(function () {
-    $('.menu, .menu__2, .menu__3, .nav span, .menu__2 span').removeClass('vis');
+    $('.menu, .menu__2, .menu__3, .nav span, .menu__2 span, .menu__levelwrap').removeClass('vis');
     $('body').removeClass('oh');
     //$('.hamburger').toggleClass('open');
 });
 $('.nav span').click(function () {
+    $('.menu__2').parent().addClass('vis');
     $('.menu__2').addClass('vis');
     $(this).addClass('vis');
 });
@@ -273,7 +274,7 @@ $('.menu__2 span').click(function () {
     $(this).addClass('vis');
 });
 $('.menu__back').click(function () {
-    $(this).parent().removeClass('vis');
+    $(this).parents('.menu__levelwrap').removeClass('vis');
     $(this).parents().find('span.vis').removeClass('vis');
 });
 /*end menu*/
