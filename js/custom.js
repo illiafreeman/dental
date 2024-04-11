@@ -270,6 +270,7 @@ $('.nav span').click(function () {
 $('.menu__2 span').click(function () {
     var level = $(this).data('menu');
     $('.menu__3, .menu__2 span').removeClass('vis');
+    $('#menu_' + level).parent().addClass('vis');
     $('#menu_' + level).addClass('vis');
     $(this).addClass('vis');
 });

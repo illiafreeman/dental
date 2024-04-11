@@ -1865,6 +1865,7 @@ body.oh {
     z-index: 100;
     overflow-y: scroll;
     display: none;
+    background: var(--white);
   }
   .menu__levelwrap.vis {
     display: block;
@@ -1879,9 +1880,12 @@ body.oh {
     position: relative;
   }
   .menu__2 {
-    background: #f6f6f6;
+    background: var(--gray);
   }
-  .menu__2 {
+  .menu__2 span:after {
+    top: 0;
+  }
+  .menu__3 {
     background: var(--white);
   }
   .menu__back, .menu__levelclose {

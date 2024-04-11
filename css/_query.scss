@@ -161,6 +161,7 @@
             z-index: 100;
             overflow-y: scroll;
             display: none;
+            background: var(--white);
             &.vis{
                 display: block;
             }
@@ -175,9 +176,14 @@
             position: relative;
         }
         &__2{
-            background: #f6f6f6;
+            background: var(--gray);
+            span{
+                &:after{
+                    top: 0;
+                }
+            }
         }
-        &__2{
+        &__3{
             background:var(--white);
         }
         &__back, &__levelclose{
