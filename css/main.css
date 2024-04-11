@@ -1136,6 +1136,9 @@ body.oh {
   opacity: 1;
   visibility: visible;
 }
+.menu__back, .menu__levelclose {
+  display: none;
+}
 .menu__container {
   width: 1180px;
   margin: 0 auto;
@@ -1155,6 +1158,8 @@ body.oh {
   z-index: 100;
 }
 .menu__close svg {
+  width: 34px;
+  height: 34px;
   fill: var(--black);
 }
 .menu__close:hover {
@@ -1831,6 +1836,8 @@ body.oh {
     right: 20px;
   }
   .menu__close svg {
+    width: 20px;
+    height: 20px;
     fill: var(--white);
   }
   .menu__soc {
@@ -1847,6 +1854,42 @@ body.oh {
   }
   .menu__contact p {
     margin-bottom: 12px;
+  }
+  .menu__2, .menu__3 {
+    padding: 100px 20px 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    z-index: 100;
+    overflow-y: scroll;
+  }
+  .menu__2 {
+    background: #f6f6f6;
+  }
+  .menu__2 {
+    background: var(--white);
+  }
+  .menu__back, .menu__levelclose {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 28px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .menu__back svg, .menu__levelclose svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--black);
+  }
+  .menu__back {
+    top: 28px;
+    left: 20px;
+    width: 24px;
+    height: 20px;
   }
 }
 @media only screen and (max-width: 1024px) {

@@ -131,6 +131,8 @@
             top: 28px;
             right: 20px;
             svg{
+                width: 20px;
+                height: 20px;
                 fill: var(--white);
             }
         }
@@ -149,6 +151,45 @@
                 margin-bottom: 12px;
             }
         }
+        &__2, &__3{
+            padding: 100px 20px 60px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 100%;
+            z-index: 100;
+            overflow-y: scroll;
+        }
+        &__2{
+            background: #f6f6f6;
+        }
+        &__2{
+            background:var(--white);
+        }
+        &__back, &__levelclose{
+            display: block;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 28px;
+            right: 20px;
+            cursor: pointer;
+            svg{
+                width: 20px;
+                height: 20px; 
+                fill: var(--black);
+            }
+        }
+        &__back{
+            top: 28px;
+            left: 20px;
+            width: 24px;
+            height: 20px;
+        }
+
+
+
     }
 
 

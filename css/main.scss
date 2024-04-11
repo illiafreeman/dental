@@ -1185,6 +1185,9 @@ body.oh{
         opacity: 1;
         visibility: visible;
     }
+    &__back, &__levelclose{
+        display: none;
+    }
     &__container {
         width: 1180px;
         margin: 0 auto;
@@ -1203,6 +1206,8 @@ body.oh{
         cursor: pointer;
         z-index: 100;
         svg{
+            width: 34px;
+            height: 34px;
             fill: var(--black);
         }
         &:hover{
