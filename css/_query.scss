@@ -142,14 +142,38 @@
             margin: 0 8px !important;
         }
     }
+    .star-gal{
+        .swiper-wrapper{
+            padding: 0 20px;
+        }
+        .swiper-slide__inner {
+            border-radius: 10px;
+            .star-gal__pic {
+                border-radius: 10px;
+            }
+        }
+    }
     .article {
         padding: 50px 0;
     }
-
-
-
-
-
+    .interier {
+        padding-top: 40px;
+        display: grid;
+        grid-template: auto / 1fr 1fr;
+        gap: 40px;
+    }
+    .interier__title {
+        font-size: 22px;
+    }
+    .interier__videowrap {
+        width: 100%;
+    }
+    .interier__videoinner, .adv__picwrap, .fear__desc div, .fear__picwrap, .about__picwrap, .about__videoinner {
+        border-radius: 12px;
+    }
+    .about__desc p {
+        font-size: 16px;
+    }
 
 
 }  

@@ -32,7 +32,7 @@ if($('#stat-gal').length){
 if($('#star-gal').length){
     var review = new Swiper('#star-gal', {
         slidesPerView: 1.5,
-        spaceBetween: 1,
+        spaceBetween: 0,
         freeMode: true,
         navigation: {
             nextEl: '#star-next',
@@ -40,16 +40,17 @@ if($('#star-gal').length){
         },
         breakpoints: {
             480: {
-                slidesPerView: 1.5,
+                slidesPerView: 2.5,
             },
             768: {
                 slidesPerView: 2.5,
             },
             1025: {
                 slidesPerView: 3,
-                spaceBetween: 20,
+                spaceBetween: 10,
             },
             1281: {
+                slidesPerView: 3,
                 spaceBetween: 60,
             },
         }
