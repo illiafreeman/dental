@@ -78,7 +78,7 @@
             padding: 0 20px;
         }
         &__main{
-            padding: 20px 0;
+            padding: 25px 0;
             &:after{
                 display: none;
                 padding-right: 0;
@@ -124,8 +124,8 @@
         &__close{
             width: 20px;
             height: 20px;
-            top: 28px;
-            right: 20px;
+            top: 35px;
+            right: 28px;
             svg{
                 width: 20px;
                 height: 20px;
@@ -713,5 +713,15 @@
     }
     .intro {
         padding: 20px 0 60px;
+    }
+    .menu__container, .menu__2, .menu__3 {
+        width: 100%;
+    }
+    .menu__levelclose{
+        top: 35px;
+        right: 28px
+    }
+    .menu__back {
+        top: 35px;
     }
 }   

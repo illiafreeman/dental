@@ -1797,7 +1797,7 @@ body.oh {
     padding: 0 20px;
   }
   .menu__main {
-    padding: 20px 0;
+    padding: 25px 0;
   }
   .menu__main:after {
     display: none;
@@ -1839,8 +1839,8 @@ body.oh {
   .menu__close {
     width: 20px;
     height: 20px;
-    top: 28px;
-    right: 20px;
+    top: 35px;
+    right: 28px;
   }
   .menu__close svg {
     width: 20px;
@@ -2369,5 +2369,15 @@ body.oh {
   }
   .intro {
     padding: 20px 0 60px;
+  }
+  .menu__container, .menu__2, .menu__3 {
+    width: 100%;
+  }
+  .menu__levelclose {
+    top: 35px;
+    right: 28px;
+  }
+  .menu__back {
+    top: 35px;
   }
 }/*# sourceMappingURL=main.css.map */
