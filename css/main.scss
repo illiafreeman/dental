@@ -195,6 +195,9 @@ body {
 .mb0{
     margin-bottom: 0 !important;
 }
+.pt0{
+    padding-top: 0 !important;
+}
 .wow {
     visibility: hidden;
 }
@@ -1634,13 +1637,13 @@ body.oh{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 38px 28px;
+        padding: 38px 28px 34px;
         text-align: center;
         gap: 24px;
     }
     &__desc {}
     &__name {
-        
+        font-size: 18px;
         margin-bottom: 22px;
         span{
             display: block;

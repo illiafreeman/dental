@@ -334,7 +334,9 @@
     .promo-gal .swiper-slide,
     .videoreview__wrap,
     .review__servlist,
-    .contact__picwrap
+    .contact__picwrap,
+    .doc,
+    .doc__picwrap
     {
         border-radius: 10px;
     }
@@ -433,6 +435,9 @@
         width: 300px;
         margin: 0 auto;;
     }
+    .breadcrumbs {
+        padding: 40px 0 50px;
+    }
 }  
 @media only screen and (max-width: 767px) {
     .container {
@@ -528,9 +533,18 @@
             padding: 0 20px;
         }
     }
-
-
-
+    .doclist {
+        grid-template: auto/1fr 1fr;
+    }
+    .doc__name {
+        font-size: 16px;
+    }
+    .doc__wrap{
+        .btn{
+            //align-self: center;
+        }
+    }
+    
 
 }
 @media only screen and (max-width: 599px) {
@@ -703,7 +717,7 @@
         padding: 24px 0 26px;
         font-size: 10px;
     }
-
+    
 
 
 
@@ -728,5 +742,8 @@
     }
     .menu__back {
         top: 35px;
+    }
+    .doclist {
+        grid-template: auto/1fr;
     }
 }   

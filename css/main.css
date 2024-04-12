@@ -199,6 +199,10 @@ body {
   margin-bottom: 0 !important;
 }
 
+.pt0 {
+  padding-top: 0 !important;
+}
+
 .wow {
   visibility: hidden;
 }
@@ -1570,11 +1574,12 @@ body.oh {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 38px 28px;
+  padding: 38px 28px 34px;
   text-align: center;
   gap: 24px;
 }
 .doc__name {
+  font-size: 18px;
   margin-bottom: 22px;
 }
 .doc__name span {
@@ -2029,7 +2034,9 @@ body.oh {
   .promo-gal .swiper-slide,
   .videoreview__wrap,
   .review__servlist,
-  .contact__picwrap {
+  .contact__picwrap,
+  .doc,
+  .doc__picwrap {
     border-radius: 10px;
   }
   .about__desc p {
@@ -2127,6 +2134,9 @@ body.oh {
     width: 300px;
     margin: 0 auto;
   }
+  .breadcrumbs {
+    padding: 40px 0 50px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .container {
@@ -2209,6 +2219,12 @@ body.oh {
   }
   .fear__wrap .galwrap .swiper {
     padding: 0 20px;
+  }
+  .doclist {
+    grid-template: auto/1fr 1fr;
+  }
+  .doc__name {
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 599px) {
@@ -2388,5 +2404,8 @@ body.oh {
   }
   .menu__back {
     top: 35px;
+  }
+  .doclist {
+    grid-template: auto/1fr;
   }
 }/*# sourceMappingURL=main.css.map */
