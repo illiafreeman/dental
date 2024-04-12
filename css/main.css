@@ -2151,6 +2151,9 @@ body.oh {
   .galwrap {
     margin: 0 -20px;
   }
+  .smi .galwrap {
+    padding: 0;
+  }
   .header__menu-btn {
     width: 36px;
     height: 36px;
@@ -2174,7 +2177,8 @@ body.oh {
   .eq-gal.swiper,
   .promo-gal.swiper,
   .videoreview.swiper,
-  .review-text.swiper {
+  .review-text.swiper,
+  .smi-gal.swiper {
     padding: 0 20px;
   }
   .star-gal.swiper {
@@ -2216,6 +2220,20 @@ body.oh {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+  }
+  .smi-gal .swiper-slide {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .smi-gal__picwrap {
+    width: 100%;
+    max-width: 100%;
+    order: 1;
+    margin-bottom: 12px;
+  }
+  .smi-gal__descwrap {
+    order: 2;
   }
 }
 @media only screen and (max-width: 480px) {

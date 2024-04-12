@@ -92,9 +92,8 @@ if ($('#eq-gal').length) {
 }
 if ($('#smi-gal').length) {
     var review = new Swiper('#smi-gal', {
-        slidesPerView: 1,
-        autoHeight: true,
-        effect: 'flip',
+        slidesPerView: 1.2,
+        spaceBetween: 60,
         navigation: {
             nextEl: '#smi-next',
             prevEl: '#smi-prev',
@@ -104,11 +103,9 @@ if ($('#smi-gal').length) {
             clickable: true,
         },
         breakpoints: {
-            480: {
+            600: {
                 slidesPerView: 1,
-            },
-            768: {
-                slidesPerView: 1,
+                autoHeight: true,
             },
         }
     });
@@ -195,6 +192,10 @@ if ($('#sert-gal').length) {
         spaceBetween: 20,
         freeMode: true,
         autoHeight: true,
+        pagination: {
+            el: "#sert-pagination",
+            clickable: true,
+        },
         navigation: {
             nextEl: '#sert-next',
             prevEl: '#sert-prev',
@@ -211,42 +212,44 @@ if ($('#sert-gal').length) {
         }
     });
 }
-
-
-var fear = null;
-function initSwiper() {
-    if (window.innerWidth <= 1024) {
-        fear = new Swiper('#fear-gal', {
-            slidesPerView: 1.2,
-            spaceBetween: 12,
-            pagination: {
-                el: "#fear-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                480: {
-                    slidesPerView: 1.5,
+if ($('#fear-gal').length) {
+    var fear = null;
+    function initSwiper() {
+        if (window.innerWidth <= 1024) {
+            fear = new Swiper('#fear-gal', {
+                slidesPerView: 1.2,
+                spaceBetween: 12,
+                pagination: {
+                    el: "#fear-pagination",
+                    clickable: true,
                 },
-                768: {
-                    slidesPerView: 2.5,
-                },
+                breakpoints: {
+                    480: {
+                        slidesPerView: 1.5,
+                    },
+                    768: {
+                        slidesPerView: 2.5,
+                    },
+                }
+            });
+        } else {
+            if (fear) {
+                fear.destroy();
             }
-        });
-    } else {
-        if (fear) {
-            fear.destroy();
         }
     }
+    var timer;
+    window.addEventListener('resize', function () {
+        if (timer) {
+            clearTimeout(timer);
+        }
+    
+        timer = setTimeout(initSwiper, 200);
+    });
+    initSwiper();
 }
-var timer;
-window.addEventListener('resize', function () {
-    if (timer) {
-        clearTimeout(timer);
-    }
 
-    timer = setTimeout(initSwiper, 200);
-});
-initSwiper();
+
 
 /*end carousel*/
 
