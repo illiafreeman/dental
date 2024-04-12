@@ -398,21 +398,30 @@
     .why .title {
         text-align: left;
     }
+    .header{
+        height: 86px;
+    }
+    .main {
+        padding-top: 86px;
+    }
 }  
 @media only screen and (max-width: 767px) {
     .container {
         padding: 0 20px;
     }
-    .intro .container{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .intro__pic {
-        height: 300px;
-        align-self: center;
-    }
-    .intro {
-        padding: 40px 0 20px;
+    .intro{
+        padding: 40px 0 60px;
+        .container{
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+            .intro__pic {
+                height: 230px;
+                position: absolute;
+                right: 40px;
+                bottom: -20px;
+            }
+        }
     }
     .header__logo{
         width: 170px;
@@ -448,8 +457,27 @@
             }
         }
     }
-
-
+    .stat-gal.swiper, 
+    .stat-gal.swiper, 
+    .eq-gal.swiper, 
+    .promo-gal.swiper, 
+    .videoreview.swiper, 
+    .review-text.swiper {
+        padding: 0 20px;
+    }
+    .star-gal.swiper {
+        padding: 0 10px;
+    }
+    .star-gal .swiper-slide {
+        padding: 10px;
+    }
+    .star-gal__name{
+        font-size: 10px;
+        height: 54px;
+    }
+    .title_h1{
+        margin-bottom: 12px;
+    }
 
 
 
