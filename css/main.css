@@ -2116,6 +2116,13 @@ body.oh {
   .fear__wrap .galwrap .swiper .swiper-slide {
     height: auto;
   }
+  .fear__wrap .swiper-pagination {
+    margin-bottom: 30px;
+  }
+  .fear__picwrap {
+    width: 300px;
+    margin: 0 auto;
+  }
 }
 @media only screen and (max-width: 767px) {
   .container {
@@ -2209,9 +2216,6 @@ body.oh {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-  }
-  .fear__wrap, .fear__desc {
-    display: block;
   }
 }
 @media only screen and (max-width: 480px) {

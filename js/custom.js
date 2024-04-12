@@ -217,12 +217,20 @@ var fear = null;
 function initSwiper() {
     if (window.innerWidth <= 1024) {
         fear = new Swiper('#fear-gal', {
-            slidesPerView: 2.5,
+            slidesPerView: 1.2,
             spaceBetween: 12,
             pagination: {
                 el: "#fear-pagination",
                 clickable: true,
             },
+            breakpoints: {
+                480: {
+                    slidesPerView: 1.5,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                },
+            }
         });
     } else {
         if (fear) {
