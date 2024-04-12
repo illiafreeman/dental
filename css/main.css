@@ -2025,7 +2025,8 @@ body.oh {
     font-size: 14px;
   }
   .eq-gal__desc h4 {
-    margin-bottom: 6px;
+    margin-bottom: 0;
+    height: 80px;
   }
   .why__list {
     gap: 20px;
@@ -2046,7 +2047,7 @@ body.oh {
     margin-bottom: 40px;
   }
   .textreview-wrap .swiper-pagination {
-    margin: 30px 0 60px;
+    margin: 30px 0 40px;
   }
   .review__more {
     font-size: 18px;
@@ -2071,6 +2072,54 @@ body.oh {
   .about__picwrap + span {
     font-size: 12px;
     font-weight: 300;
+    display: inline-block;
+    line-height: 1.1;
+  }
+  .why .title {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+  .intro .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .intro__pic {
+    height: 300px;
+    align-self: center;
+  }
+  .intro {
+    padding: 40px 0 20px;
+  }
+  .header__logo {
+    width: 170px;
+  }
+  .header__group .btn {
+    display: none;
+  }
+  .galwrap {
+    margin: 0 -20px;
+  }
+  .header__menu-btn {
+    width: 36px;
+    height: 36px;
+  }
+  .header .hamburger {
+    width: 30px;
+    height: 20px;
+  }
+  .header .hamburger span {
+    height: 2px;
+    border-radius: 1px;
+  }
+  .header .hamburger span:nth-child(2) {
+    top: 9px;
+  }
+  .header .hamburger span:nth-child(3) {
+    top: 18px;
   }
 }
 @media only screen and (max-width: 480px) {
