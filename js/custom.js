@@ -13,7 +13,6 @@ if ($('#stat-gal').length) {
         },
         breakpoints: {
             400: {
-                slidesPerView: 2.5,
             },
             768: {
                 slidesPerView: 2.5,
@@ -31,7 +30,7 @@ if ($('#stat-gal').length) {
 }
 if ($('#star-gal').length) {
     var review = new Swiper('#star-gal', {
-        slidesPerView: 1.5,
+        slidesPerView: 1.1,
         spaceBetween: 0,
         freeMode: true,
         navigation: {
@@ -62,7 +61,7 @@ if ($('#star-gal').length) {
 }
 if ($('#eq-gal').length) {
     var review = new Swiper('#eq-gal', {
-        slidesPerView: 1.5,
+        slidesPerView: 1.1,
         spaceBetween: 12,
         freeMode: true,
         navigation: {
@@ -112,7 +111,7 @@ if ($('#smi-gal').length) {
 }
 if ($('#promo-gal').length) {
     var review = new Swiper('#promo-gal', {
-        slidesPerView: 1.5,
+        slidesPerView: 1.1,
         spaceBetween: 12,
         freeMode: true,
         navigation: {
@@ -138,7 +137,7 @@ if ($('#promo-gal').length) {
 }
 if ($('#videoreview').length) {
     var review = new Swiper('#videoreview', {
-        slidesPerView: 1.5,
+        slidesPerView: 1.1,
         spaceBetween: 12,
         freeMode: true,
         navigation: {
@@ -164,7 +163,7 @@ if ($('#videoreview').length) {
 }
 if ($('#textreview').length) {
     var review = new Swiper('#textreview', {
-        slidesPerView: 1.5,
+        slidesPerView: 1.1,
         spaceBetween: 12,
         freeMode: true,
         navigation: {
@@ -215,7 +214,7 @@ if ($('#fear-gal').length) {
     function initSwiper() {
         if (window.innerWidth <= 1024) {
             fear = new Swiper('#fear-gal', {
-                slidesPerView: 1.2,
+                slidesPerView: 1.1,
                 spaceBetween: 12,
                 pagination: {
                     el: "#fear-pagination",

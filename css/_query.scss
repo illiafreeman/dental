@@ -506,7 +506,7 @@
         padding: 10px;
     }
     .star-gal__name{
-        font-size: 10px;
+        font-size: 14px;
         height: 54px;
     }
     .title_h1{
@@ -662,8 +662,42 @@
             margin: 0 auto;
         }
     }
+    .footer__wrap {
+        display: flex;
+        flex-direction: column;
+        padding: 32px 0;
+        gap: 20px;
+        font-size: 12px;
+        .footer__logo{
+            width: 160px;
+        }
+        .footer__contact{
+            display: flex;
+            flex-direction: column;
+            br{
+                display: none;
+            }
+        }
+        .footer__soc{
+            top: 38px;
+            gap: 12px;
+            .footer__soclink{
+                width: 22px;
+                height: 22px;
+            }
+        }
+        .footer__lic{
 
+        }
+        .footer__pub{
 
+        }
+        
+    }
+    .footer__copy {
+        padding: 24px 0 26px;
+        font-size: 10px;
+    }
 
 
 
@@ -671,7 +705,13 @@
 
 } 
 @media only screen and (max-width: 480px) {
-    .menu__container, .menu__2, .menu__3 {
-        width: 100%;
+    .intro .container .intro__pic{
+        width: 260px;
+        height: auto;;
+        margin: 30px auto 0;
+        position: static;
+    }
+    .intro {
+        padding: 20px 0 60px;
     }
 }   
