@@ -537,7 +537,7 @@
             display: block;
         }
     }
-    h2{
+    .interier__title{
         text-align: center;
     }
     h1 {
@@ -563,6 +563,53 @@
     .smi-gal__descwrap{
         order: 2;
     }
+    .adv__wrap{
+        flex-direction: column;
+    }
+    .adv__picwrap, .adv__desc {
+        width: 100%;
+    }
+    .adv__picwrap{
+        order: 2;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .adv__desc{
+        order: 1;
+    }
+    .about__wrap{
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+    }
+    .about__picblock{
+        order: 2;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .about__desc{
+        order: 1;
+    }
+    .about__video{
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        br{
+            display: none;
+        }
+        p{
+            order: 2;
+        }
+        .about__videowrap{
+            order: 1;
+            margin-bottom: 8px;
+        }
+    }
+
+
+
+
 
 
 
