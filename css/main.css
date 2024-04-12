@@ -482,6 +482,9 @@ body {
 .star {
   background: #f6f6f6;
 }
+.star-pagination {
+  display: none;
+}
 
 .star-gal .swiper-slide {
   padding: 20px;
@@ -526,7 +529,7 @@ body {
   font-weight: 400;
   font-size: 32px;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 !important;
 }
 .interier__title strong {
   font-weight: 600;
@@ -581,12 +584,17 @@ body {
   align-items: center;
 }
 .fear__wrap {
-  display: flex;
+  display: grid;
+  grid-template: auto/1.8fr 1fr;
   gap: 8px;
 }
+.fear__wrap .galwrap {
+  margin: 0;
+}
+.fear-gal {
+  height: 100%;
+}
 .fear__desc {
-  width: 760px;
-  min-width: 760px;
   display: grid;
   grid-template: auto/1fr 1fr;
   gap: 8px;
@@ -987,6 +995,9 @@ body {
 .contact__text a:hover:after {
   width: 100%;
   left: 0;
+}
+.contact__text p span {
+  display: inline-block;
 }
 .contact__picwrap {
   overflow: hidden;
@@ -1767,10 +1778,6 @@ body.oh {
   .adv__desc p {
     margin-bottom: 28px;
   }
-  .fear__desc {
-    width: 70%;
-    min-width: 70%;
-  }
   .about__videowrap {
     width: auto;
   }
@@ -2084,6 +2091,20 @@ body.oh {
   .main {
     padding-top: 86px;
   }
+  .why__wrap {
+    grid-column-gap: 40px;
+    grid-template: auto 1fr/1.5fr 1fr;
+  }
+  .why__list li span:first-child {
+    margin-right: 24px;
+    font-size: 42px;
+  }
+  .fear__desc {
+    display: flex;
+  }
+  .fear__wrap {
+    display: block;
+  }
 }
 @media only screen and (max-width: 767px) {
   .container {
@@ -2098,9 +2119,9 @@ body.oh {
     position: relative;
   }
   .intro .container .intro__pic {
-    height: 230px;
+    height: 40vw;
     position: absolute;
-    right: 40px;
+    right: 50px;
     bottom: -20px;
   }
   .header__logo {
@@ -2150,6 +2171,36 @@ body.oh {
   }
   .title_h1 {
     margin-bottom: 12px;
+  }
+  .contact__text p strong {
+    display: block;
+  }
+  .contact__wrap {
+    grid-template: 1fr/1.5fr 1fr;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .interier {
+    grid-template: auto/1fr;
+    gap: 32px;
+  }
+  .star-pagination {
+    display: block;
+  }
+  h2 {
+    text-align: center;
+  }
+  h1 {
+    text-align: left;
+  }
+  .fear .title_h2 {
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .fear__wrap, .fear__desc {
+    display: block;
   }
 }
 @media only screen and (max-width: 480px) {

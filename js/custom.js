@@ -2,7 +2,7 @@
 
 
 /*carousel*/
-if($('#stat-gal').length){
+if ($('#stat-gal').length) {
     var reviewGal = new Swiper('#stat-gal', {
         slidesPerView: 1.5,
         spaceBetween: 12,
@@ -12,7 +12,7 @@ if($('#stat-gal').length){
             clickable: true,
         },
         breakpoints: {
-            480: {
+            400: {
                 slidesPerView: 2.5,
             },
             768: {
@@ -29,7 +29,7 @@ if($('#stat-gal').length){
         }
     });
 }
-if($('#star-gal').length){
+if ($('#star-gal').length) {
     var review = new Swiper('#star-gal', {
         slidesPerView: 1.5,
         spaceBetween: 0,
@@ -37,6 +37,10 @@ if($('#star-gal').length){
         navigation: {
             nextEl: '#star-next',
             prevEl: '#star-prev',
+        },
+        pagination: {
+            el: "#star-pagination",
+            clickable: true,
         },
         breakpoints: {
             480: {
@@ -56,7 +60,7 @@ if($('#star-gal').length){
         }
     });
 }
-if($('#eq-gal').length){
+if ($('#eq-gal').length) {
     var review = new Swiper('#eq-gal', {
         slidesPerView: 1.5,
         spaceBetween: 12,
@@ -86,7 +90,7 @@ if($('#eq-gal').length){
         }
     });
 }
-if($('#smi-gal').length){
+if ($('#smi-gal').length) {
     var review = new Swiper('#smi-gal', {
         slidesPerView: 1,
         autoHeight: true,
@@ -109,7 +113,7 @@ if($('#smi-gal').length){
         }
     });
 }
-if($('#promo-gal').length){
+if ($('#promo-gal').length) {
     var review = new Swiper('#promo-gal', {
         slidesPerView: 1.5,
         spaceBetween: 12,
@@ -136,7 +140,7 @@ if($('#promo-gal').length){
         }
     });
 }
-if($('#videoreview').length){
+if ($('#videoreview').length) {
     var review = new Swiper('#videoreview', {
         slidesPerView: 1.5,
         spaceBetween: 12,
@@ -163,7 +167,7 @@ if($('#videoreview').length){
         }
     });
 }
-if($('#textreview').length){
+if ($('#textreview').length) {
     var review = new Swiper('#textreview', {
         slidesPerView: 1.2,
         spaceBetween: 12,
@@ -185,7 +189,7 @@ if($('#textreview').length){
         }
     });
 }
-if($('#sert-gal').length){
+if ($('#sert-gal').length) {
     var review = new Swiper('#sert-gal', {
         slidesPerView: 1.5,
         spaceBetween: 20,
@@ -207,24 +211,49 @@ if($('#sert-gal').length){
         }
     });
 }
+
+
+var fear = null;
+function initSwiper() {
+    if (window.innerWidth <= 1024) {
+        fear = new Swiper('#fear-gal', {
+            slidesPerView: 1.5,
+            spaceBetween: 12,
+        });
+    } else {
+        if (fear) {
+            fear.destroy();
+        }
+    }
+}
+var timer;
+window.addEventListener('resize', function () {
+    if (timer) {
+        clearTimeout(timer);
+    }
+
+    timer = setTimeout(initSwiper, 200);
+});
+initSwiper();
+
 /*end carousel*/
 
 /*fancybox*/
-if($('#star-gal a[data-fancybox]').length){
+if ($('#star-gal a[data-fancybox]').length) {
     Fancybox.bind('#star-gal [data-fancybox]', {
         Thumbs: {
             type: 'classic',
         },
     });
 }
-if($('#smi-gal a[data-fancybox]').length){
+if ($('#smi-gal a[data-fancybox]').length) {
     Fancybox.bind('#smi-gal [data-fancybox]', {
         Thumbs: {
             type: 'classic',
         },
     });
 }
-if($('#sert-gal a[data-fancybox]').length){
+if ($('#sert-gal a[data-fancybox]').length) {
     Fancybox.bind('#sert-gal [data-fancybox]', {
         Thumbs: {
             type: 'classic',
@@ -274,45 +303,45 @@ $('.menu__back').click(function () {
 /*end menu*/
 
 /*animation on scroll*/
-if($('.wow').length){
+if ($('.wow').length) {
     new WOW().init();
 }
 /*end animation on scroll*/
 
 /*menu*/
 function modal() {
-	var offset = window.innerWidth - document.body.offsetWidth ;
-	$('body').addClass('oh').css({'padding-right': offset, 'transition': 'all 0.5s ease-in-out;'});
-	$('.modal-bg').addClass('vis');
-	$('.modal-wrap').addClass('vis');
-	$('.modal[data-attr="modal_form"]').addClass('vis');
-	$('.scrollTop.vis').css({'right': 30 + offset + 'px'});
-	//console.log(offset);
+    var offset = window.innerWidth - document.body.offsetWidth;
+    $('body').addClass('oh').css({ 'padding-right': offset, 'transition': 'all 0.5s ease-in-out;' });
+    $('.modal-bg').addClass('vis');
+    $('.modal-wrap').addClass('vis');
+    $('.modal[data-attr="modal_form"]').addClass('vis');
+    $('.scrollTop.vis').css({ 'right': 30 + offset + 'px' });
+    //console.log(offset);
 }
 $('.btn_modal').click(modal);
-$(document).on('click','.modal__close, .modal-wrap',function(){
-	var offset = window.innerWidth - document.body.offsetWidth;
-	$('body').removeClass('oh').css({'padding-right': offset, 'transition': 'all 0.5s ease-in-out;'});
-	$('.modal-bg').removeClass('vis');
-	$('.modal-wrap').removeClass('vis');
-	$('.modal').removeClass('vis');
-	$('.scrollTop.vis').css({'right': 30 + offset + 'px'});
-	$('.modal[data-attr="modal_review"] .modal__body .review__item-inner').remove();
-	
+$(document).on('click', '.modal__close, .modal-wrap', function () {
+    var offset = window.innerWidth - document.body.offsetWidth;
+    $('body').removeClass('oh').css({ 'padding-right': offset, 'transition': 'all 0.5s ease-in-out;' });
+    $('.modal-bg').removeClass('vis');
+    $('.modal-wrap').removeClass('vis');
+    $('.modal').removeClass('vis');
+    $('.scrollTop.vis').css({ 'right': 30 + offset + 'px' });
+    $('.modal[data-attr="modal_review"] .modal__body .review__item-inner').remove();
+
 });
-$(document).on('click','.modal',function(e){
-	e.stopPropagation();
-	
+$(document).on('click', '.modal', function (e) {
+    e.stopPropagation();
+
 });
-$(document).keydown(function(event) { 
-    if($('.modal-wrap').hasClass('vis')){
-        if (event.keyCode == 27) { 
+$(document).keydown(function (event) {
+    if ($('.modal-wrap').hasClass('vis')) {
+        if (event.keyCode == 27) {
             var offset = window.innerWidth - document.body.offsetWidth;
-            $('body').removeClass('oh').css({'padding-right': offset, 'transition': 'all 0.5s ease-in-out;'});
+            $('body').removeClass('oh').css({ 'padding-right': offset, 'transition': 'all 0.5s ease-in-out;' });
             $('.modal-bg').removeClass('vis');
             $('.modal-wrap').removeClass('vis');
             $('.modal').removeClass('vis');
-            $('.scrollTop.vis').css({'right': 30 + offset + 'px'});
+            $('.scrollTop.vis').css({ 'right': 30 + offset + 'px' });
         }
     }
 });
