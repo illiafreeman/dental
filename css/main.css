@@ -2101,9 +2101,20 @@ body.oh {
   }
   .fear__desc {
     display: flex;
+    gap: 0;
+    align-items: stretch;
   }
   .fear__wrap {
     display: block;
+  }
+  .fear__wrap .galwrap {
+    margin: 0 -40px;
+  }
+  .fear__wrap .galwrap .swiper {
+    padding: 0 40px;
+  }
+  .fear__wrap .galwrap .swiper .swiper-slide {
+    height: auto;
   }
 }
 @media only screen and (max-width: 767px) {

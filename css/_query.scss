@@ -410,9 +410,20 @@
     }
     .fear__desc{
         display: flex;
+        gap: 0;
+        align-items: stretch;
     }
     .fear__wrap{
         display: block;
+        .galwrap {
+            margin: 0 -40px;
+            .swiper{
+                padding: 0 40px;
+                .swiper-slide{
+                    height: auto;
+                }
+            }
+        }
     }
 }  
 @media only screen and (max-width: 767px) {
