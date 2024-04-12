@@ -125,7 +125,6 @@ if ($('#promo-gal').length) {
         },
         breakpoints: {
             480: {
-                slidesPerView: 2.5,
             },
             768: {
                 slidesPerView: 2.5,
@@ -152,7 +151,6 @@ if ($('#videoreview').length) {
         },
         breakpoints: {
             480: {
-                slidesPerView: 2.5,
             },
             768: {
                 slidesPerView: 2.5,
@@ -166,7 +164,7 @@ if ($('#videoreview').length) {
 }
 if ($('#textreview').length) {
     var review = new Swiper('#textreview', {
-        slidesPerView: 1.2,
+        slidesPerView: 1.5,
         spaceBetween: 12,
         freeMode: true,
         navigation: {

@@ -2025,7 +2025,8 @@ body.oh {
   .about__videoinner,
   .promo-gal .swiper-slide,
   .videoreview__wrap,
-  .review__servlist {
+  .review__servlist,
+  .contact__picwrap {
     border-radius: 10px;
   }
   .about__desc p {
@@ -2277,6 +2278,57 @@ body.oh {
   .about__video .about__videowrap {
     order: 1;
     margin-bottom: 8px;
+  }
+  .why__wrap {
+    flex-direction: column;
+    display: flex;
+  }
+  .why__wrap .why__list {
+    order: 2;
+    margin-bottom: 20px;
+  }
+  .why__wrap .title {
+    order: 1;
+  }
+  .why__wrap .why__picwrap {
+    order: 3;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .team__wrap {
+    flex-direction: column;
+    display: flex;
+  }
+  .team__wrap .team__picwrap {
+    order: 2;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .team__wrap .team__desc {
+    order: 1;
+  }
+  .team__wrap .team__btnwrap {
+    order: 2;
+    align-self: center;
+  }
+  .review__servlist {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .contact__wrap {
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+  }
+  .contact__wrap .contact__desc .contact__text p {
+    margin-bottom: 14px;
+  }
+  .contact__wrap .contact__desc .btn {
+    margin: 10px auto;
+  }
+  .contact__wrap .contact__picwrap {
+    width: 300px;
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 480px) {
