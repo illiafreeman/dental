@@ -48,7 +48,11 @@
     </header>
     <div class="menu">
         <div class="menu__container">
-            <div class="menu__close"></div>
+            <div class="menu__close">
+                <svg>
+                    <use xlink:href="./img/sprite.svg#icon-close"></use>
+                </svg>
+            </div>
             <div class="menu__main">
                 <a href="" class="menu__logo">
                     <img src="./img/logo.svg" alt="">
@@ -76,26 +80,134 @@
                     <p><strong>График работы:</strong> пн-пт: 9.00-21.00, сб-вс: 10.00-20.00</p>
                 </div>
             </div>
-            <ul class="menu__2">
-                <li><a href="">Консультация и диагностика</a></li>
-                <li>
-                    <span>Лечение зубов и травм</span>
-                </li>
-                <li><a href="">Антистресс-лечение зубов<br>(наркоз, седация, закись азота)</a></li>
-                <li><a href="">Лечение ВНЧС</a></li>
-                <li><a href="">Имплантация</a></li>
-                <li><a href="">Протезирование</a></li>
-                <li><a href="">Хирургия</a></li>
-                <li><a href="">Ортодонтия</a></li>
-                <li><a href="">Детская стоматология</a></li>
-                <li><a href="">Лечение десен<br>(гингивит, пародонтоз, кровотечение)</a></li>
-                <li><a href="">Профессиональная гигиена<br>и отбеливание</a></li>    
-            </ul>
-            <ul class="menu__3">
-                <li><a href="">Лечение кариеса и установка пломбы</a></li>
-                <li><a href="">Лечение каналов зуба, пульпита, кисты<br>и периодонтита</a></li>
-                <li><a href="">Реставрация зуба</a></li>
-            </ul>
+            <div class="menu__levelwrap menu__levelwrap_2">
+                <ul class="menu__2">
+                    <li class="menu__back">
+                        <img src="./img/back.svg" alt="">
+                    </li>
+                    <li class="menu__levelclose">
+                        <svg>
+                            <use xlink:href="./img/sprite.svg#icon-close"></use>
+                        </svg>
+                    </li>
+                    <li><a href="">Консультация и диагностика</a></li>
+                    <li>
+                        <span data-menu="2_1">Лечение зубов и травм</span>
+                    </li>
+                    <li><a href="">Антистресс-лечение зубов<br>(наркоз, седация, закись азота)</a></li>
+                    <li><a href="">Лечение ВНЧС</a></li>
+                    <li>
+                        <span data-menu="2_2">Имплантация</span>
+                    </li>
+                    <li>
+                        <span data-menu="2_3">Протезирование</span>
+                    </li>
+                    <li>
+                        <span data-menu="2_4">Хирургия</span>
+                    </li>
+                    <li>
+                        <span data-menu="2_5">Ортодонтия</span>
+                    </li>
+                    <li><a href="">Детская стоматология</a></li>
+                    <li><a href="">Лечение десен<br>(гингивит, пародонтоз, кровотечение)</a></li>
+                    <li>
+                        <span data-menu="2_6">Профессиональная гигиена<br>и отбеливание</span>
+                    </li>    
+                </ul>
+            </div>
+            <div class="menu__levelwrap">
+                <ul id="menu_2_1" class="menu__3">
+                    <li class="menu__back">
+                        <img src="./img/back.svg" alt="">
+                    </li>
+                    <li class="menu__levelclose">
+                        <svg>
+                            <use xlink:href="./img/sprite.svg#icon-close"></use>
+                        </svg>
+                    </li>
+                    <li><a href="">Лечение кариеса и установка пломбы</a></li>
+                    <li><a href="">Лечение каналов зуба, пульпита, кисты<br>и периодонтита</a></li>
+                    <li><a href="">Реставрация зуба</a></li>
+                </ul>
+            </div>
+            <div class="menu__levelwrap">
+                <ul id="menu_2_2" class="menu__3">
+                    <li class="menu__back">
+                        <img src="./img/back.svg" alt="">
+                    </li>
+                    <li class="menu__levelclose">
+                        <svg>
+                            <use xlink:href="./img/sprite.svg#icon-close"></use>
+                        </svg>
+                    </li>
+                    <li><a href="">Одиночная имплантация (классическая)</a></li>
+                    <li><a href="">Имплантация Аll-on-4 / Аll-on-6</a></li>
+                    <li><a href="">Скуловая имплантация Zygoma</a></li>
+                </ul>
+            </div>
+            <div class="menu__levelwrap">
+                <ul id="menu_2_3" class="menu__3">
+                    <li class="menu__back">
+                        <img src="./img/back.svg" alt="">
+                    </li>
+                    <li class="menu__levelclose">
+                        <svg>
+                            <use xlink:href="./img/sprite.svg#icon-close"></use>
+                        </svg>
+                    </li>
+                    <li><a href="">Коронки</a></li>
+                    <li><a href="">Виниры</a></li>
+                    <li><a href="">Съемные протезы</a></li>
+                    <li><a href="">Протезирование на имплантатах</a></li>
+                </ul>
+            </div>
+            <div class="menu__levelwrap">
+                <ul id="menu_2_4" class="menu__3">
+                    <li class="menu__back">
+                        <img src="./img/back.svg" alt="">
+                    </li>
+                    <li class="menu__levelclose">
+                        <svg>
+                            <use xlink:href="./img/sprite.svg#icon-close"></use>
+                        </svg>
+                    </li>
+                    <li><a href="">Удаление зубов без боли</a></li>
+                    <li><a href="">Удаление зубов мудрости</a></li>
+                    <li><a href="">Удаление кисты зуба</a></li>
+                    <li><a href="">Пластика уздечки языка</a></li>
+                    <li><a href="">Пластика десны</a></li>
+                    <li><a href="">Костная пластика</a></li>
+                </ul>
+            </div>
+            <div class="menu__levelwrap">
+                <ul id="menu_2_5" class="menu__3">
+                    <li class="menu__back">
+                        <img src="./img/back.svg" alt="">
+                    </li>
+                    <li class="menu__levelclose">
+                        <svg>
+                            <use xlink:href="./img/sprite.svg#icon-close"></use>
+                        </svg>
+                    </li>
+                    <li><a href="">Брекеты</a></li>
+                    <li><a href="">Элайнеры</a></li>
+                    <li><a href="">Пластинки для детей</a></li>
+                </ul>
+            </div>
+            <div class="menu__levelwrap">
+                <ul id="menu_2_6" class="menu__3">
+                    <li class="menu__back">
+                        <img src="./img/back.svg" alt="">
+                    </li>
+                    <li class="menu__levelclose">
+                        <svg>
+                            <use xlink:href="./img/sprite.svg#icon-close"></use>
+                        </svg>
+                    </li>
+                    <li><a href="">Чистка и удаление зубного камня</a></li>
+                    <li><a href="">Отбеливание зубов</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <main class="main">
@@ -539,10 +651,10 @@
                         </div>
                         </div>
                     <div>
-                        <p><strong>Адрес:</strong> г. Москва, ул. Ельнинская, д. 14,<br>корп.2 (м. Молодежная)</p>
+                        <p><strong>Адрес:</strong> г.&nbsp;Москва, ул.&nbsp;Ельнинская, д.&nbsp;14,<br>корп.2 (м. Молодежная)</p>
                     </div>
                     <div>
-                        <p><strong>График работы:</strong> пн-пт: 9.00-21.00, сб-вс: 10.00-20.00</p>
+                        <p><strong>График работы:</strong> пн-пт: 9.00-21.00, сб-вс:&nbsp;10.00-20.00</p>
                     </div>
                     <div>
                         <p><strong>E-mail:</strong> <a class="footer__mail" href="mailto:info@wdc-dent.ru" target="_blank">info@wdc-dent.ru</a></p>
