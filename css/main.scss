@@ -1087,6 +1087,11 @@ body {
         &>div:nth-child(1) div:first-child{
             margin-bottom: 3px;
         }
+        p{
+            span{
+                display: inline-block;
+            }
+        }
     }
     &__contact-tel {
         font-family: var(--second-family);

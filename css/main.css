@@ -1036,6 +1036,9 @@ body {
 .footer__contact > div:nth-child(1) div:first-child {
   margin-bottom: 3px;
 }
+.footer__contact p span {
+  display: inline-block;
+}
 .footer__contact-tel {
   font-family: var(--second-family);
   font-weight: 600;
