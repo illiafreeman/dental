@@ -522,7 +522,12 @@
     .contact__wrap {
         grid-template: 1fr/1.5fr 1fr;
     }
-    
+    .fear__wrap .galwrap {
+        margin: 0 -20px;
+        .swiper {
+            padding: 0 20px;
+        }
+    }
 
 
 
