@@ -165,8 +165,8 @@ if($('#videoreview').length){
 }
 if($('#textreview').length){
     var review = new Swiper('#textreview', {
-        slidesPerView: 1.5,
-        spaceBetween: 20,
+        slidesPerView: 1.2,
+        spaceBetween: 12,
         freeMode: true,
         navigation: {
             nextEl: '#textreview-next',
@@ -177,14 +177,7 @@ if($('#textreview').length){
             clickable: true,
         },
         breakpoints: {
-            480: {
-                slidesPerView: 2.5,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
+
             1025: {
                 slidesPerView: 2,
                 spaceBetween: 20,

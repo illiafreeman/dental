@@ -1925,9 +1925,6 @@ body.oh {
   h3 {
     font-size: 16px;
   }
-  .intro {
-    padding: 0 0 20px;
-  }
   .intro__subdesc span {
     margin-bottom: 4px;
     font-size: 14px;
@@ -1958,8 +1955,17 @@ body.oh {
   .stat-gal .swiper-wrapper .swiper-slide {
     text-align: left;
   }
-  .stat-gal .swiper-wrapper, .stat-gal .swiper-wrapper, .eq-gal .swiper-wrapper, .promo-gal .swiper-wrapper, .videoreview .swiper-wrapper {
+  .stat-gal.swiper, .stat-gal.swiper, .eq-gal.swiper, .promo-gal.swiper, .videoreview.swiper, .review-text.swiper {
     padding: 0 40px;
+  }
+  .star-gal.swiper {
+    padding: 0 20px;
+  }
+  .star-gal .swiper-slide__inner {
+    border-radius: 10px;
+  }
+  .star-gal .swiper-slide__inner .star-gal__pic {
+    border-radius: 10px;
   }
   .smi .galwrap {
     padding: 0 40px;
@@ -1976,17 +1982,17 @@ body.oh {
     height: 6px;
     margin: 0 8px !important;
   }
-  .star-gal .swiper-wrapper {
-    padding: 0 20px;
-  }
-  .star-gal .swiper-slide__inner {
-    border-radius: 10px;
-  }
-  .star-gal .swiper-slide__inner .star-gal__pic {
-    border-radius: 10px;
-  }
   .article {
     padding: 50px 0;
+  }
+  .intro {
+    padding: 0 0 20px;
+  }
+  .stat {
+    padding-top: 0;
+  }
+  .star .title {
+    margin-bottom: 12px;
   }
   .interier {
     padding-top: 40px;
@@ -2011,11 +2017,12 @@ body.oh {
   .about__picwrap,
   .about__videoinner,
   .promo-gal .swiper-slide,
-  .videoreview__wrap {
+  .videoreview__wrap,
+  .review__servlist {
     border-radius: 10px;
   }
   .about__desc p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .eq-gal__desc h4 {
     margin-bottom: 6px;
@@ -2024,16 +2031,46 @@ body.oh {
     gap: 20px;
   }
   .why__list li span {
-    font-size: 16px;
+    font-size: 14px;
   }
   .team__wrap {
     grid-gap: 20px 40px;
   }
   .team__desc {
-    font-size: 16px;
+    font-size: 14px;
   }
   .promo__title {
-    font-size: 16px;
+    font-size: 14px;
+  }
+  .videoreview-wrap {
+    margin-bottom: 40px;
+  }
+  .textreview-wrap .swiper-pagination {
+    margin: 30px 0 60px;
+  }
+  .review__more {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+  .contact__text, .footer__wrap {
+    font-size: 14px;
+  }
+  .contact__desc {
+    gap: 20px;
+  }
+  .footer__wrap {
+    grid-gap: 20px 40px;
+  }
+  .about__video p {
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+  .about__picwrap {
+    margin-bottom: 8px;
+  }
+  .about__picwrap + span {
+    font-size: 12px;
+    font-weight: 300;
   }
 }
 @media only screen and (max-width: 480px) {
