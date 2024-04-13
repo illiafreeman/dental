@@ -1570,6 +1570,7 @@ body.oh{
     display: flex;
     white-space: nowrap;
     overflow: auto;
+    position: relative;
     li{
         padding: 0 20px 0 15px;
         background: url(../img/chevron_green.svg) no-repeat left center;
@@ -1579,6 +1580,7 @@ body.oh{
             color: var(--white); 
             text-transform: uppercase;
             display: inline-block;
+            position: relative;
             &:before {
                 content: "";
                 height: 1px;
@@ -1610,6 +1612,17 @@ body.oh{
                 transition: var(--transition);
             }
         }
+    }
+    &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 30px;
+        background: linear-gradient(to right,  rgba(39,39,39,0) 0%,rgba(39,39,39,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
     }
 }
 .doclist {
