@@ -208,7 +208,7 @@ body {
 }
 
 .main {
-  padding-top: 100px;
+  padding-top: 105px;
   flex: 1 0 auto;
 }
 
@@ -2086,8 +2086,50 @@ body.oh {
   .doccard-min__inner,
   .doccard__picwrap,
   .sert-gal__picwrap,
-  .doccard-wrap {
+  .doccard-wrap,
+  .modal {
     border-radius: 10px;
+  }
+  .modal[data-attr=modal_form] {
+    width: 300px;
+  }
+  .modal[data-attr=modal_form] .modal__body {
+    padding: 52px 10px;
+    text-align: center;
+  }
+  .modal[data-attr=modal_form] .modal__body h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .modal[data-attr=modal_form] .modal__body .modal__close {
+    top: 12px;
+    right: 12px;
+  }
+  .modal[data-attr=modal_form] .modal__body .modal__close svg {
+    width: 16px;
+    height: 16px;
+  }
+  .modal[data-attr=modal_form] .modal__body .call {
+    font-size: 14px;
+    margin-bottom: 26px;
+  }
+  .modal[data-attr=modal_form] .modal__body .call span {
+    display: inline-block;
+  }
+  .modal[data-attr=modal_form] .modal__body .formwrap label:not(.btn) {
+    margin-bottom: 12px;
+  }
+  .modal[data-attr=modal_form] .modal__body .formwrap label:not(.btn) span {
+    font-size: 12px;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  .modal[data-attr=modal_form] .modal__body .formwrap label:not(.btn) .input {
+    height: 46px;
+    width: 100%;
+  }
+  .modal[data-attr=modal_form] .modal__body .formwrap .btn {
+    margin-top: 30px;
   }
   .about__desc p {
     font-size: 14px;
@@ -2194,6 +2236,27 @@ body.oh {
   .content hr {
     margin: 40px 0;
   }
+  .header__menu-btn {
+    width: 36px;
+    height: 36px;
+  }
+  .header .hamburger {
+    width: 30px;
+    height: 20px;
+  }
+  .header .hamburger span {
+    height: 2px;
+    border-radius: 1px;
+  }
+  .header .hamburger span:nth-child(2) {
+    top: 9px;
+  }
+  .header .hamburger span:nth-child(3) {
+    top: 18px;
+  }
+  .header__logo {
+    width: 170px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .container {
@@ -2213,9 +2276,6 @@ body.oh {
     right: 50px;
     bottom: -20px;
   }
-  .header__logo {
-    width: 170px;
-  }
   .header__group .btn {
     display: none;
   }
@@ -2224,24 +2284,6 @@ body.oh {
   }
   .smi .galwrap {
     padding: 0;
-  }
-  .header__menu-btn {
-    width: 36px;
-    height: 36px;
-  }
-  .header .hamburger {
-    width: 30px;
-    height: 20px;
-  }
-  .header .hamburger span {
-    height: 2px;
-    border-radius: 1px;
-  }
-  .header .hamburger span:nth-child(2) {
-    top: 9px;
-  }
-  .header .hamburger span:nth-child(3) {
-    top: 18px;
   }
   .stat-gal.swiper,
   .stat-gal.swiper,

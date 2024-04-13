@@ -322,7 +322,7 @@ if ($('.wow').length) {
 }
 /*end animation on scroll*/
 
-/*menu*/
+/*modal*/
 function modal() {
     var offset = window.innerWidth - document.body.offsetWidth;
     $('body').addClass('oh').css({ 'padding-right': offset, 'transition': 'all 0.5s ease-in-out;' });
@@ -359,7 +359,7 @@ $(document).keydown(function (event) {
         }
     }
 });
-/*end menu*/
+/*end modal*/
 
 /*modal phone mask*/
 $("#phone").mask("+7 (999) 999-99-99");

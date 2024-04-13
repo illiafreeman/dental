@@ -345,9 +345,53 @@
     .doccard-min__inner,
     .doccard__picwrap,
     .sert-gal__picwrap,
-    .doccard-wrap
+    .doccard-wrap,
+    .modal
     {
         border-radius: 10px;
+    }
+    .modal[data-attr="modal_form"]{
+        width: 300px;
+        .modal__body {
+            padding: 52px 10px;
+            text-align: center;
+            h2 {
+                font-size: 18px;
+                margin-bottom: 12px;
+            }
+            .modal__close {
+                top: 12px;
+                right: 12px;
+                svg {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            .call {
+                font-size: 14px;
+                margin-bottom: 26px;
+                span{
+                    display: inline-block;
+                }
+            }
+            .formwrap{
+                label:not(.btn) {
+                    margin-bottom: 12px;
+                }
+                label:not(.btn) span {
+                    font-size: 12px;
+                    margin-bottom: 8px;
+                    text-align: left;
+                }
+                label:not(.btn) .input {
+                    height: 46px;
+                    width: 100%;
+                }
+                .btn{
+                    margin-top: 30px;
+                }
+            }
+        }
     }
     .about__desc p {
         font-size: 14px;
@@ -454,39 +498,6 @@
     .content hr{
         margin: 40px 0;
     }
-}  
-@media only screen and (max-width: 767px) {
-    .container {
-        padding: 0 20px;
-    }
-    .intro{
-        padding: 40px 0 60px;
-        .container{
-            flex-direction: column;
-            align-items: flex-start;
-            position: relative;
-            .intro__pic {
-                height: 40vw;
-                position: absolute;
-                right: 50px;
-                bottom: -20px;
-            }
-        }
-    }
-    .header__logo{
-        width: 170px;
-    }
-    .header__group{
-        .btn{
-            display: none;
-        }
-    }
-    .galwrap {
-        margin: 0 -20px;
-    }
-    .smi .galwrap {
-        padding: 0;
-    }
     .header__menu-btn {
         width: 36px;
         height: 36px;
@@ -510,6 +521,41 @@
             }
         }
     }
+    .header__logo{
+        width: 170px;
+    }
+}  
+@media only screen and (max-width: 767px) {
+    .container {
+        padding: 0 20px;
+    }
+    .intro{
+        padding: 40px 0 60px;
+        .container{
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+            .intro__pic {
+                height: 40vw;
+                position: absolute;
+                right: 50px;
+                bottom: -20px;
+            }
+        }
+    }
+    
+    .header__group{
+        .btn{
+            display: none;
+        }
+    }
+    .galwrap {
+        margin: 0 -20px;
+    }
+    .smi .galwrap {
+        padding: 0;
+    }
+    
     .stat-gal.swiper, 
     .stat-gal.swiper, 
     .eq-gal.swiper, 
