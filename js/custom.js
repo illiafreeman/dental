@@ -185,8 +185,8 @@ if ($('#textreview').length) {
 }
 if ($('#sert-gal').length) {
     var review = new Swiper('#sert-gal', {
-        slidesPerView: 1.5,
-        spaceBetween: 20,
+        slidesPerView: 1.1,
+        spaceBetween: 12,
         freeMode: true,
         autoHeight: true,
         pagination: {
@@ -200,9 +200,11 @@ if ($('#sert-gal').length) {
         breakpoints: {
             480: {
                 slidesPerView: 2.5,
-                spaceBetween: 20,
             },
             768: {
+                slidesPerView: 2.5,
+            },
+            1025: {
                 slidesPerView: 3,
                 spaceBetween: 20,
             },

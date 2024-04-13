@@ -1502,6 +1502,8 @@ body.oh {
 .breadcrumbs {
   padding: 50px 0 68px;
   display: flex;
+  white-space: nowrap;
+  overflow: auto;
 }
 .breadcrumbs li {
   padding: 0 20px 0 15px;
@@ -1734,6 +1736,26 @@ body.oh {
   border-radius: 20px;
   display: block;
 }
+.doccard-min {
+  display: none;
+}
+.doccard-min__inner {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 56.25%;
+}
+.doccard-min__inner iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media only screen and (max-width: 1280px) {
   body {
     font-size: 14px;
@@ -1923,6 +1945,17 @@ body.oh {
     width: 24px;
     height: 20px;
   }
+  .content, .readmore {
+    font-size: 14px;
+  }
+  .doccard__videowrap {
+    display: none;
+  }
+  .doccard-min {
+    display: block;
+    width: 400px;
+    margin: 40px auto 0;
+  }
 }
 @media only screen and (max-width: 1024px) {
   body {
@@ -1970,7 +2003,7 @@ body.oh {
   .stat-gal .swiper-wrapper .swiper-slide {
     text-align: left;
   }
-  .stat-gal.swiper, .stat-gal.swiper, .eq-gal.swiper, .promo-gal.swiper, .videoreview.swiper, .review-text.swiper {
+  .stat-gal.swiper, .stat-gal.swiper, .eq-gal.swiper, .promo-gal.swiper, .videoreview.swiper, .review-text.swiper, .sert-gal.swiper {
     padding: 0 40px;
   }
   .star-gal.swiper {
@@ -2036,7 +2069,11 @@ body.oh {
   .review__servlist,
   .contact__picwrap,
   .doc,
-  .doc__picwrap {
+  .doc__picwrap,
+  .doccard-min__inner,
+  .doccard__picwrap,
+  .sert-gal__picwrap,
+  .doccard-wrap {
     border-radius: 10px;
   }
   .about__desc p {
@@ -2137,6 +2174,13 @@ body.oh {
   .breadcrumbs {
     padding: 40px 0 50px;
   }
+  .doccard {
+    grid-template: auto auto/200px 1fr;
+    gap: 40px;
+  }
+  .content hr {
+    margin: 40px 0;
+  }
 }
 @media only screen and (max-width: 767px) {
   .container {
@@ -2192,7 +2236,8 @@ body.oh {
   .promo-gal.swiper,
   .videoreview.swiper,
   .review-text.swiper,
-  .smi-gal.swiper {
+  .smi-gal.swiper,
+  .sert-gal.swiper {
     padding: 0 20px;
   }
   .star-gal.swiper {
@@ -2225,6 +2270,9 @@ body.oh {
   }
   .doc__name {
     font-size: 16px;
+  }
+  .doccard-wrap {
+    padding: 40px 20px;
   }
 }
 @media only screen and (max-width: 599px) {
@@ -2384,6 +2432,21 @@ body.oh {
     padding: 24px 0 26px;
     font-size: 10px;
   }
+  .doccard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .doccard__picwrap {
+    margin: -40px -20px 0;
+  }
+  .doccard__desc {
+    text-align: center;
+  }
+  .doccard__btnwrap {
+    align-self: center;
+  }
 }
 @media only screen and (max-width: 480px) {
   .intro .container .intro__pic {
@@ -2407,5 +2470,8 @@ body.oh {
   }
   .doclist {
     grid-template: auto/1fr;
+  }
+  .doccard-min {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
