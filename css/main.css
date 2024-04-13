@@ -1617,6 +1617,7 @@ body.oh {
   gap: 48px;
   position: relative;
   margin-bottom: 40px;
+  font-family: var(--second-family);
 }
 .doccard__picwrap {
   border-radius: 20px;
@@ -1968,6 +1969,9 @@ body.oh {
     display: block;
     width: 400px;
     margin: 40px auto 0;
+  }
+  .content ul li::before {
+    top: 6px;
   }
 }
 @media only screen and (max-width: 1024px) {
