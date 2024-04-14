@@ -365,7 +365,23 @@ $(document).keydown(function (event) {
 $("#phone").mask("+7 (999) 999-99-99");
 /*end modal phone mask*/
 
-
+/*scrolltop*/
+var scrollTop = $(".scrollTop");
+$(window).scroll(function () {
+	var topPos = $(this).scrollTop();
+	if (topPos > 500) {
+		$(scrollTop).addClass('vis');
+	} else {
+		$(scrollTop).removeClass('vis');
+	}
+});
+$(scrollTop).click(function () {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 800);
+	return false;
+});
+/*end scrolltop*/
 
 
 
