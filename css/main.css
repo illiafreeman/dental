@@ -208,7 +208,6 @@ body {
 }
 
 .main {
-  padding-top: 105px;
   flex: 1 0 auto;
 }
 
@@ -228,6 +227,10 @@ body {
   left: 0;
   right: 0;
   z-index: 100;
+  transition: var(--transition);
+}
+.header.unvis {
+  top: -140px;
 }
 .header__container {
   display: flex;
@@ -374,7 +377,7 @@ body {
   padding: 120px 0;
 }
 .article_first {
-  padding-top: 0;
+  padding-top: 105px !important;
 }
 .article_black {
   background: var(--black);
@@ -2220,8 +2223,8 @@ body.oh {
   .header {
     height: 86px;
   }
-  .main {
-    padding-top: 86px;
+  .article_first {
+    padding-top: 86px !important;
   }
   .why__wrap {
     grid-column-gap: 40px;
