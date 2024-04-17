@@ -84,9 +84,7 @@ if ($('#eq-gal').length) {
                 slidesPerView: 3,
                 spaceBetween: 20,
             },
-            1281: {
 
-            },
         }
     });
 }
