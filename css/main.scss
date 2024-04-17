@@ -1155,7 +1155,12 @@ body {
         right: 0;
         top: 76px;
         display: flex;
-        gap: 16px;
+        flex-direction: column;
+        gap: 24px;
+        &wrap{
+            display: flex;
+            gap: 16px;
+        }
     }
     &__soclink {
         transition: var(--transition);
@@ -1194,6 +1199,35 @@ body {
                 right: 0;
                 width: 0;
                 left: auto;
+            }
+        }
+    }
+    &__socother{
+        grid-area: 2/1/3/3;
+        font-family: var(-third-family);
+        font-size: 12px;
+        text-align: right;
+        span{
+            display: block;
+        }
+        a{
+            color: var(--green);
+            position: relative;
+            display: inline-block;
+            &:before {
+                content: "";
+                height: 1px;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                right: 0;
+                width: 0;
+                background: #717725;
+                transition: var(--transition);
+            }
+            &:hover::before {
+                width: 100%;
+                left: 0;
             }
         }
     }

@@ -1102,6 +1102,11 @@ body {
   right: 0;
   top: 76px;
   display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.footer__socwrap {
+  display: flex;
   gap: 16px;
 }
 .footer__soclink {
@@ -1143,6 +1148,35 @@ body {
   right: 0;
   width: 0;
   left: auto;
+}
+.footer__socother {
+  grid-area: 2/1/3/3;
+  font-family: var(-third-family);
+  font-size: 12px;
+  text-align: right;
+}
+.footer__socother span {
+  display: block;
+}
+.footer__socother a {
+  color: var(--green);
+  position: relative;
+  display: inline-block;
+}
+.footer__socother a:before {
+  content: "";
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  right: 0;
+  width: 0;
+  background: #717725;
+  transition: var(--transition);
+}
+.footer__socother a:hover::before {
+  width: 100%;
+  left: 0;
 }
 
 body.oh {
@@ -2398,6 +2432,43 @@ body.oh {
   .contact__btnwrap {
     margin-top: 0;
   }
+  .footer__wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0;
+    gap: 20px;
+    font-size: 12px;
+  }
+  .footer__wrap .footer__logo {
+    width: 160px;
+  }
+  .footer__wrap .footer__contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__wrap .footer__contact br {
+    display: none;
+  }
+  .footer__wrap .footer__soc {
+    top: 38px;
+    gap: 12px;
+    gap: 28px;
+  }
+  .footer__wrap .footer__soc .footer__soclink {
+    width: 22px;
+    height: 22px;
+  }
+  .footer__wrap .footer__socwrap {
+    justify-content: flex-end;
+    gap: 12px;
+  }
+  .footer__wrap .footer__socother {
+    font-size: 10px;
+  }
+  .footer__copy {
+    padding: 24px 0 26px;
+    font-size: 10px;
+  }
 }
 @media only screen and (max-width: 599px) {
   .interier {
@@ -2521,35 +2592,6 @@ body.oh {
   .contact__wrap .contact__picwrap {
     width: 300px;
     margin: 0 auto;
-  }
-  .footer__wrap {
-    display: flex;
-    flex-direction: column;
-    padding: 32px 0;
-    gap: 20px;
-    font-size: 12px;
-  }
-  .footer__wrap .footer__logo {
-    width: 160px;
-  }
-  .footer__wrap .footer__contact {
-    display: flex;
-    flex-direction: column;
-  }
-  .footer__wrap .footer__contact br {
-    display: none;
-  }
-  .footer__wrap .footer__soc {
-    top: 38px;
-    gap: 12px;
-  }
-  .footer__wrap .footer__soc .footer__soclink {
-    width: 22px;
-    height: 22px;
-  }
-  .footer__copy {
-    padding: 24px 0 26px;
-    font-size: 10px;
   }
   .doccard {
     display: flex;
