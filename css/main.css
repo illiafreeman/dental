@@ -172,6 +172,10 @@ table td {
   --white: #ffffff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
