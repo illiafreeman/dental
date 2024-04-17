@@ -18,7 +18,7 @@ if ($('#stat-gal').length) {
                 slidesPerView: 2.5,
             },
             1025: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 30,
                 navigation: {
                     nextEl: '#stat-next',

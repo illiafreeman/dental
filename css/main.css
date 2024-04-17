@@ -2221,10 +2221,11 @@ body.oh {
     text-align: left;
   }
   .header {
-    height: 86px;
+    height: 78px;
+    padding: 20px 0;
   }
   .article_first {
-    padding-top: 86px !important;
+    padding-top: 78px !important;
   }
   .why__wrap {
     grid-column-gap: 40px;
