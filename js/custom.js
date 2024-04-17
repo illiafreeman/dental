@@ -175,7 +175,12 @@ if ($('#textreview').length) {
             clickable: true,
         },
         breakpoints: {
-
+            480: {
+                slidesPerView: 1.5,
+            },
+            768: {
+                slidesPerView: 2.5,
+            },
             1025: {
                 slidesPerView: 2,
                 spaceBetween: 20,

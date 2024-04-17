@@ -336,6 +336,8 @@
     .fear__desc div, 
     .fear__picwrap, 
     .eq-gal .swiper-slide,
+    .review-text .swiper-slide,
+    .review-text .swiper-slide:after,
     .about__picwrap, 
     .about__videoinner, 
     .promo-gal .swiper-slide,
@@ -800,7 +802,7 @@
                 }
             }
             .btn{
-                margin: 10px auto;  
+                margin: 10px 0;  
             }
         }
         .contact__picwrap{
@@ -863,5 +865,12 @@
     }
     .doccard-min{
         width: 100%;
+    }
+    .contact__btnwrap{
+        flex-direction: column;
+        gap: 0;
+    }
+    .textreview-wrap .swiper-pagination .swiper-pagination-bullet {
+        margin: 0 4px !important;
     }
 }   
