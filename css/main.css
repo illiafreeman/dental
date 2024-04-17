@@ -2309,6 +2309,9 @@ body.oh {
     right: 50px;
     bottom: -20px;
   }
+  .intro .container .intro__desc {
+    padding-top: 26px;
+  }
   .header__group .btn {
     display: none;
   }

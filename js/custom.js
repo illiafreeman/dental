@@ -15,7 +15,7 @@ if ($('#stat-gal').length) {
             400: {
             },
             768: {
-                slidesPerView: 2.5,
+                slidesPerView: 2.2,
             },
             1025: {
                 slidesPerView: 3,
