@@ -1420,6 +1420,10 @@ body.oh {
   padding: 70px;
   position: relative;
 }
+.modal__body h2 {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
 .modal__desc {
   color: #272727;
   text-align: center;
@@ -1481,7 +1485,7 @@ body.oh {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 18px;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 .call a {
   font-weight: 600;
@@ -2433,7 +2437,7 @@ body.oh {
   }
   .about__picblock {
     order: 2;
-    width: 300px;
+    width: 100%;
     margin: 0 auto;
   }
   .about__desc {
@@ -2549,6 +2553,16 @@ body.oh {
   }
   .doccard__btnwrap {
     align-self: center;
+  }
+  .fear__picwrap,
+  .adv__picwrap,
+  .fear__picwrap,
+  .about__picwrap,
+  .why__picwrap,
+  .team__picwrap,
+  .contact__picwrap {
+    width: 100% !important;
+    height: 400px;
   }
 }
 @media only screen and (max-width: 480px) {

@@ -684,7 +684,7 @@
     }
     .about__picblock{
         order: 2;
-        width: 300px;
+        width: 100%;
         margin: 0 auto;
     }
     .about__desc{
@@ -812,7 +812,16 @@
             align-self: center;
         }
     }
-
+    .fear__picwrap,
+    .adv__picwrap, 
+    .fear__picwrap, 
+    .about__picwrap, 
+    .why__picwrap, 
+    .team__picwrap, 
+    .contact__picwrap {
+        width: 100% !important;
+        height: 400px;
+    }
 
 
 
