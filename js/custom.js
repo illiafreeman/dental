@@ -74,7 +74,7 @@ if ($('#eq-gal').length) {
         },
         breakpoints: {
             480: {
-                slidesPerView: 2.5,
+                slidesPerView: 1.5,
             },
             768: {
                 slidesPerView: 2.5,
