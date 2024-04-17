@@ -366,9 +366,22 @@ $(document).keydown(function (event) {
 });
 /*end modal*/
 
-/*modal phone mask*/
+/*modal review*/
+$(document).on('click','.review-text .swiper-slide',function(){
+	var qw = $(this).html();
+	$('.modal[data-attr="modal_review"] .modal__body').prepend(qw);
+	var offset = window.innerWidth - document.body.offsetWidth ;
+	$('body').addClass('oh').css({'padding-right': offset, 'transition': 'all 0.5s ease-in-out;'});
+	$('.modal-bg').addClass('vis');
+	$('.modal-wrap').addClass('vis');
+	$('.modal[data-attr="modal_review"]').addClass('vis');
+	$('.scrollTop.vis').css({'right': 30 + offset + 'px'});
+});
+/*end modal review*/
+
+/*phone mask*/
 $("#phone").mask("+7 (999) 999-99-99");
-/*end modal phone mask*/
+/*end phone mask*/
 
 /*scrolltop*/
 var scrollTop = $(".scrollTop");
