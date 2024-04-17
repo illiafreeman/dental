@@ -1015,7 +1015,7 @@ body {
 .contact {
     &__wrap {
         display: grid;
-        grid-template: 1fr/1fr 1fr;
+        grid-template: 1fr/2fr 1fr;
         grid-column-gap: 60px;
     }
     &__desc {
@@ -1066,6 +1066,11 @@ body {
         object-fit: cover;
         width: 100%;
         height: 100%;
+    }
+    &__btnwrap{
+        display: flex;
+        gap: 20px;
+        margin-top: 30px;
     }
 }
 .footer {
