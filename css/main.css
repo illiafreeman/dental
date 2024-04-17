@@ -398,7 +398,6 @@ body {
 .article_black .review-text .swiper-slide {
   background: var(--white);
   color: var(--black);
-  border-radius: 20px;
 }
 
 .intro {
@@ -1930,7 +1929,7 @@ body.oh {
     padding: 0 20px;
   }
   .menu__main {
-    padding: 25px 0;
+    padding: 20px 0;
   }
   .menu__main:after {
     display: none;
@@ -1972,7 +1971,7 @@ body.oh {
   .menu__close {
     width: 20px;
     height: 20px;
-    top: 35px;
+    top: 30px;
     right: 28px;
   }
   .menu__close svg {
@@ -2650,11 +2649,11 @@ body.oh {
     width: 100%;
   }
   .menu__levelclose {
-    top: 35px;
+    top: 30px;
     right: 28px;
   }
   .menu__back {
-    top: 35px;
+    top: 30px;
   }
   .doclist {
     grid-template: auto/1fr;
